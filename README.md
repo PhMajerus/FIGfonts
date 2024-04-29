@@ -1,5 +1,6 @@
 # Philippe Majerus's FIGfonts collection
 
+
 ## Introduction
 
 This repository contains the fonts I created for the [FIGlet utility](http://www.figlet.org/).
@@ -25,13 +26,20 @@ This is a FIGlet version of the example Large Type Pieces (Unicode 16.0) ASCII f
 It is a reference font for large type pieces introduced in Unicode 16.0 but only contains the 96 base characters.
 It uses three rows and its look depends on the font design, as large type pieces can be different in different fonts.
 
+If you want to learn more about Large Type Pieces, try `curl https://raw.githubusercontent.com/PhMajerus/Documents/main/HowTos/HowTo%20Large%20Type%20Pieces.txt`.
+
+This FIGfont requires the terminal to support Large Type Pieces characters to display properly, a font such as [Cascadia ≥2404.23](https://github.com/microsoft/cascadia-code) or [Iosevka ≥29.0.0](https://github.com/be5invis/Iosevka) is recommended.
+
 ### phm-largetype
 ![phm-largetype](images/phm-largetype.png)
 
 This is my main Large Type Pieces (Unicode 16.0) font, containing over 1000 characters covering Latin-1, Latin Extended-A, Vietnamese and some Latin Extended-B and Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width katakana, some mathematical operators and symbols, and more.
 It uses Unicode 16 Large Type Pieces (U+1CE1A to U+1CE50) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
 It also uses Sextants and Octants for some non-alphabetical characters such as outlined letters and 7-segment digits.
-It requires the terminal to support those characters to display properly, a font such as [Cascadia ≥2404.23](https://github.com/microsoft/cascadia-code) or [Iosevka ≥29.0.0](https://github.com/be5invis/Iosevka) is recommended.
+
+If you want to learn more about Large Type Pieces, try `curl https://raw.githubusercontent.com/PhMajerus/Documents/main/HowTos/HowTo%20Large%20Type%20Pieces.txt`.
+
+This FIGfont requires the terminal to support Large Type Pieces characters to display properly, a font such as [Cascadia ≥2404.23](https://github.com/microsoft/cascadia-code) or [Iosevka ≥29.0.0](https://github.com/be5invis/Iosevka) is recommended.
 
 _Remember to use `figlet -f phm-largetype -C utf8` to access Unicode characters._
 
