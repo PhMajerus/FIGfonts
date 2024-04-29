@@ -15,7 +15,8 @@ This is my main ANSI/VT-based font, containing over 500 characters.
 This font uses extended ASCII characters from the US (437) codepage, and requires an ANSI/VT terminal that supports the underline escape sequence.
 It works in FIGlet 2.2.5, but the width computation gets confused, so it requires -w 999 to avoid misplaced line breaks.
 It does not work at all in TOIlet 0.3, as escape sequences get removed.
-_Remember to use `figlet -w 999` to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
+
+_Remember to use `figlet -f phm-smallvt -C utf8 -w 999` to access Unicode characters and to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
 ### hp2640-largetype
 ![hp2640-largetype](images/hp2640-largetype.png)
@@ -31,7 +32,8 @@ This is my main Large Type Pieces (Unicode 16.0) font, containing over 1000 char
 It uses Unicode 16 Large Type Pieces (U+1CE1A to U+1CE50) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
 It also uses Sextants and Octants for some non-alphabetical characters such as outlined letters and 7-segment digits.
 It requires the terminal to support those characters to display properly, a font such as [Cascadia ≥2404.23](https://github.com/microsoft/cascadia-code) or [Iosevka ≥29.0.0](https://github.com/be5invis/Iosevka) is recommended.
-_Remember to use `figlet -C utf8` to access Unicode characters._
+
+_Remember to use `figlet -f phm-largetype -C utf8` to access Unicode characters._
 
 ### phm-blocky
 ![phm-blocky](images/phm-blocky.png)
@@ -40,7 +42,8 @@ This font uses extended ASCII characters from the US (437) codepage and ANSI/VT 
 It uses just two rows and supports the base characters set.
 It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 999` to avoid misplaced line breaks.
 It does not work at all in TOIlet 0.3, as escape sequences get removed.
-_Remember to use `figlet -w 999` to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
+
+_Remember to use `figlet -f phm-blocky -w 999` to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
 ### phm-blocky-reverse
 ![phm-blocky-reverse](images/phm-blocky-reverse.png)
@@ -75,5 +78,6 @@ sudo cp phm-largetype.flf /usr/share/figlet/phm-largetype.flf
 echo 'Hello, world!' | figlet -f phm-largetype -C utf8
 ```
 
+---
 
 -- Philippe Majerus, April 2024
