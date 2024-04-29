@@ -1,9 +1,9 @@
-# FIGfonts
+# Philippe Majerus's FIGfonts collection
 
 ## Introduction
 
 This repository contains the fonts I created for the [FIGlet utility](http://www.figlet.org/).
-While most FIGfonts are ASCII-art, I decided to experiment with ANSI/VT coloring, extended Unicode characters as sub-characters, ...
+While most FIGfonts are ASCII-art, I decided to experiment with ANSI/VT coloring, extended Unicode characters as sub-characters, …
 
 
 ## Fonts in this repository
