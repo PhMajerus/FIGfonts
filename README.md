@@ -45,6 +45,7 @@ _Remember to use `figlet -f phm-largetype -C utf8` to access Unicode characters.
 
 ### phm-lcdmatrix
 ![phm-lcdmatrix](images/phm-lcdmatrix.png)
+
 This font uses Unicode 16.0 octants characters to create a monospaced retro low-rez font like on LCD and LED signboards, and 8-bit computers.
 The characters are 6×8 semi-pixels, inspired by the Motorola MC6847 character generator, Tatung Einstein TC-01, TRS-80, and other computers of the 1980's.
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
