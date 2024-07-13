@@ -50,7 +50,7 @@ This is a subset of my Large Type Pieces font, but instead of using Unicode 16.0
 found on HP 2640 Series terminals and compatibles.
 This is used to create large type text on terminals that support an alternate character set for its ASCII characters.
 
-SoftFonts (Soft Character Sets) providing the Larget Type Pieces to DEC VT220, VT320, and VT420 terminals can be found in [my SoftFonts
+SoftFonts (Soft Character Sets / DRCS) providing the Larget Type Pieces to DEC VT220, VT320, and VT420 terminals can be found in [my SoftFonts
 collections](https://github.com/PhMajerus/Documents).
 
 Note the character set must be selected and then restored when using this FIGfont, for example:
