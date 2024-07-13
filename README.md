@@ -43,6 +43,17 @@ This FIGfont requires the terminal to support Large Type Pieces characters to di
 
 _Remember to use `figlet -f phm-largetype -C utf8` to access Unicode characters._
 
+### phm-largetype-ASCII
+
+This is a subset of my Large Type Pieces font, but instead of using Unicode 16.0 characters, it uses the legacy alternate character set
+found on HP 2640 Series terminals and compatible.
+This is used to create large type text on terminals that support an alternate character set for its ASCII characters.
+SoftFonts (Soft Character Sets) providing the Larget Type Pieces to DEC VT220, VT320, and VT420 terminals can be found in [my SoftFonts
+collections](https://github.com/PhMajerus/Documents).
+
+Note the character set must be selected and then restored when using this FIGfont. For example:
+`echo -ne "\e( L"; figlet -f phm-largetype-ASCII -C utf8 "Hello, world!"; echo -ne "\e(B"`
+
 ### phm-lcdmatrix
 ![phm-lcdmatrix](images/phm-lcdmatrix.png)
 
