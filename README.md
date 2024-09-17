@@ -90,7 +90,7 @@ It uses four rows and supports the base characters set.
 ### beyond-blue
 ![beyond-blue](images/beyond-blue.png)
 
-This font was designed by by Strahd(ST) & Roy/SAC as `BEYONDX.TDF` for TheDRAW, an MS-DOS ANSI-art drawing application.
+This font was designed by Strahd(ST) & Roy/SAC as `BEYONDX.TDF` for TheDRAW, an MS-DOS ANSI-art drawing application.
 I converted it to a FIGlet font from the original file.
 It uses the US (437) codepage and ANSI/VT escape sequences for colors to create large colorful 9-rows characters.
 It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
