@@ -24,7 +24,7 @@ _Remember to use `figlet -f phm-smallvt -C utf8 -w 999` to access Unicode charac
 
 This is a FIGlet version of the example Large Type Pieces (Unicode 16.0) ASCII font provided by Hewlett-Packard in their HP 2641A/2645A/2645S Display Station Reference Manual, Table B-16.
 It is a reference font for large type pieces introduced in Unicode 16.0 but only contains the 96 base characters.
-It uses three rows and its look depends on the font design, as large type pieces can be different in different fonts.
+It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows. Its look depends on the font design, as large type pieces can be different in different fonts.
 
 If you want to learn more about Large Type Pieces, try `curl https://raw.githubusercontent.com/PhMajerus/Documents/main/HowTos/HowTo%20Large%20Type%20Pieces.txt`.
 
@@ -34,7 +34,7 @@ This FIGfont requires the terminal to support Large Type Pieces characters to di
 ![phm-largetype](images/phm-largetype.png)
 
 This is my main Large Type Pieces (Unicode 16.0) font, containing over 1000 characters covering Latin-1, Latin Extended-A, Vietnamese and some Latin Extended-B and Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width katakana, some mathematical operators and symbols, and more.
-It uses Unicode 16 Large Type Pieces (U+1CE1A to U+1CE50) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
+It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
 It also uses Sextants and Octants for some non-alphabetical characters such as outlined letters and 7-segment digits.
 
 If you want to learn more about Large Type Pieces, try `curl https://raw.githubusercontent.com/PhMajerus/Documents/main/HowTos/HowTo%20Large%20Type%20Pieces.txt`.
@@ -87,17 +87,27 @@ The equivalent font in non-reverse is not possible without help from ANSI/VT to 
 This font uses Unicode characters (Box Drawings lines, half lines, diagonals and arcs).
 It uses four rows and supports the base characters set.
 
+### beyond-blue
+![beyond-blue](images/beyond-blue.png)
+
+This font was designed by by Strahd(ST) & Roy/SAC as `BEYONDX.TDF` for TheDRAW, an MS-DOS ANSI-art drawing application.
+I converted it to a FIGlet font from the original file.
+It uses the US (437) codepage and ANSI/VT escape sequences for colors to create large colorful 9-rows characters.
+It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
+It does not work at all in TOIlet 0.3, as escape sequences get removed.
+
+_Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
 ## Using & installing FIGfonts
 You'll need the FIGlet utility, so start with `sudo apt install figlet` or equivalent for your distro.
 FIGfonts can be used as it by specifying their paths:
-```
+```bash
 echo 'Hello, world!' | figlet -f /some_path/phm-largetype.flf -C utf8
 ```
 The `-C utf8` option makes it support Unicode characters, handling the input as UTF-8.
 
 But to make it cleaner and easier to use regularly, the font files can be copied to the FIGfont folder:
-```
+```bash
 # Find out which directory contains figfonts
 figlet -I2
 # Copy font file(s) to that directory
@@ -108,4 +118,4 @@ echo 'Hello, world!' | figlet -f phm-largetype -C utf8
 
 ---
 
--- Philippe Majerus, April 2024
+-- Philippe Majerus, September 2024
