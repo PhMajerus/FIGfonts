@@ -147,6 +147,14 @@ sudo cp phm-largetype.flf /usr/share/figlet/phm-largetype.flf
 echo 'Hello, world!' | figlet -f phm-largetype -C utf8
 ```
 
+Note many of my fonts use ANSI/VT control sequences, which FIGlet does not support, making it miscalculate the width of characters. The workaround is to use the `-w 9999` argument to prevent it from wrapping text.
+To create text that spans several lines, the `fold` utility can be used to prepare the text in advance.
+For example:
+```bash
+uname -a | fold -sw 20 | figlet -f /mnt/c/Projects/Linux\ Misc/FIGfonts/Release/fonts/phm-beyondneo-red.flf -w 9999 -C utf8
+```
+This takes the output of `uname`, formats it for lines of 20 characters max, breaking it at spaces instead of in words, then uses `figlet` to convert that to large colorful characters.
+
 ---
 
 -- Philippe Majerus, September 2024
