@@ -23,7 +23,7 @@ _Remember to use `figlet -f phm-smallvt -C utf8 -w 999` to access Unicode charac
 ![hp2640-largetype](images/hp2640-largetype.png)
 
 This is a FIGlet version of the example Large Type Pieces (Unicode 16.0) ASCII font provided by Hewlett-Packard in their HP 2641A/2645A/2645S Display Station Reference Manual, Table B-16.
-It is a reference font for large type pieces introduced in Unicode 16.0 but only contains the 96 base characters.
+It is a reference font for large type pieces introduced in Unicode 16.0 but only contains the 96 base ASCII characters.
 It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows. Its look depends on the font design, as large type pieces can be different in different fonts.
 
 If you want to learn more about Large Type Pieces, try `curl https://raw.githubusercontent.com/PhMajerus/Documents/main/HowTos/HowTo%20Large%20Type%20Pieces.txt`.
@@ -67,7 +67,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 ![phm-blocky](images/phm-blocky.png)
 
 This font uses extended ASCII characters from the US (437) codepage and ANSI/VT escape sequences for inverted (negative) characters.
-It uses just two rows and supports the base characters set.
+It uses just two rows and supports the base ASCII characters set.
 It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 999` to avoid misplaced line breaks.
 It does not work at all in TOIlet 0.3, as escape sequences get removed.
 
@@ -77,7 +77,7 @@ _Remember to use `figlet -f phm-blocky -w 999` to avoid misplaced line breaks an
 ![phm-blocky-reverse](images/phm-blocky-reverse.png)
 
 This font uses extended ASCII characters from the US (437) codepage.
-It uses four rows and supports the base characters set.
+It uses four rows and supports the base ASCII characters set.
 Unlike phm-blocky, this reverse version does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the block elements found in codepage 473.
 The equivalent font in non-reverse is not possible without help from ANSI/VT to invert (negative) some characters.
 
@@ -85,7 +85,7 @@ The equivalent font in non-reverse is not possible without help from ANSI/VT to 
 ![phm-rounded](images/phm-rounded.png)
 
 This font uses Unicode characters (Box Drawings lines, half lines, diagonals and arcs).
-It uses four rows and supports the base characters set.
+It uses four rows and supports the base ASCII characters set.
 
 ### beyond-blue
 ![beyond-blue](images/beyond-blue.png)
@@ -102,7 +102,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 ### phm-beyondneo-mono
 ![phm-beyondneo-mono](images/phm-beyondneo-mono.png)
 
-This font is inspired by the look of ST/Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the base characters set.
+This font is inspired by the look of ST/Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the base ASCII characters set.
 
 This version of called "mono" for monochrome because it is designed without any ANSI/VT escape sequence, but other versions are planned that
 will provide colors.
