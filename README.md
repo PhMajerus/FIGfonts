@@ -98,6 +98,16 @@ It does not work at all in TOIlet 0.3, as escape sequences get removed.
 
 _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
+
+### phm-beyondneo-mono
+![phm-beyondneo-mono](images/phm-beyondneo-mono.png)
+
+This font is inspired by the look of ST/Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the base characters set.
+
+This version of called "mono" for monochrome because it is designed without any ANSI/VT escape sequence, but other versions are planned that
+will provide colors.
+
+
 ## Using & installing FIGfonts
 You'll need the FIGlet utility, so start with `sudo apt install figlet` or equivalent for your distro.
 FIGfonts can be used as it by specifying their paths:
