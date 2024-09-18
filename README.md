@@ -1,5 +1,7 @@
 # Philippe Majerus's FIGfonts collection
 
+![Philippe Majerus's FIGfonts collection](images/title.png)
+
 
 ## Introduction
 
