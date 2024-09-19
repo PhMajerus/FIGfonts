@@ -110,7 +110,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST/Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the base ASCII characters set.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the base ASCII characters set.
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-mono
@@ -118,13 +118,21 @@ Several versions are available with different color schemes or compatible with p
 
 This is the monochrome version of Beyond Neo. it is designed without any ANSI/VT escape sequence, making it compatible with plain-text and VT-unaware utilities.
 
-#### phm-beyondneo-red
+#### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -silver
 ![phm-beyondneo-red](images/phm-beyondneo-red.png)
+![phm-beyondneo-green](images/phm-beyondneo-green.png)
+![phm-beyondneo-blue](images/phm-beyondneo-blue.png)
+![phm-beyondneo-yellow](images/phm-beyondneo-yellow.png)
+![phm-beyondneo-purple](images/phm-beyondneo-purple.png)
+![phm-beyondneo-cyan](images/phm-beyondneo-cyan.png)
+![phm-beyondneo-silver](images/phm-beyondneo-silver.png)
 
-This is the red color scheme of Beyond Neo. It requires 256 colors ANSI/VT escape sequences support.
+These are the red, green, blue, yellow, purple, cyan, and silver color schemes of Beyond Neo.
+They require 256 colors ANSI/VT escape sequences support.
 
-It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
-It does not work at all in TOIlet 0.3, as escape sequences get removed.
+They work in FIGlet 2.2.5, but the width computation gets confused, so they can only be used for single lines.
+They require `-w 9999` to avoid misplaced line breaks.
+They do not work at all in TOIlet 0.3, as escape sequences get removed.
 
 _Remember to use `figlet -f phm-beyondneo-red -w 9999` to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
