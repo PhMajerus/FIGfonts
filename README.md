@@ -128,7 +128,7 @@ This is the monochrome version of Beyond Neo. it is designed without any ANSI/VT
 ![phm-beyondneo-orange](images/phm-beyondneo-orange.png)
 ![phm-beyondneo-silver](images/phm-beyondneo-silver.png)
 
-These are the red, green, blue, yellow, purple, cyan, and silver color schemes of Beyond Neo.
+These are the red, green, blue, yellow, purple, cyan, orange, and silver color schemes of Beyond Neo.
 They require 256 colors ANSI/VT escape sequences support.
 
 They work in FIGlet 2.2.5, but the width computation gets confused, so they can only be used for single lines.
