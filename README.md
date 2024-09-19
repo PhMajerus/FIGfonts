@@ -118,13 +118,14 @@ Several versions are available with different color schemes or compatible with p
 
 This is the monochrome version of Beyond Neo. it is designed without any ANSI/VT escape sequence, making it compatible with plain-text and VT-unaware utilities.
 
-#### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -silver
+#### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -silver
 ![phm-beyondneo-red](images/phm-beyondneo-red.png)
 ![phm-beyondneo-green](images/phm-beyondneo-green.png)
 ![phm-beyondneo-blue](images/phm-beyondneo-blue.png)
 ![phm-beyondneo-yellow](images/phm-beyondneo-yellow.png)
 ![phm-beyondneo-purple](images/phm-beyondneo-purple.png)
 ![phm-beyondneo-cyan](images/phm-beyondneo-cyan.png)
+![phm-beyondneo-orange](images/phm-beyondneo-orange.png)
 ![phm-beyondneo-silver](images/phm-beyondneo-silver.png)
 
 These are the red, green, blue, yellow, purple, cyan, and silver color schemes of Beyond Neo.
