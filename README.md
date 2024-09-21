@@ -28,7 +28,7 @@ _Remember to use `figlet -f phm-smallvt -C utf8 -w 999` to access Unicode charac
 This is a FIGlet version of the example Large Type Pieces (Unicode 16.0) ASCII font provided by Hewlett-Packard in their HP 2641A/2645A/2645S Display Station Reference Manual, Table B-16.
 It is a reference font for large type pieces introduced in Unicode 16.0 but only contains the 96 base ASCII characters.
 
-It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows. Its look depends on the font design, as large type pieces can be different in different fonts.
+It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants to build a smooth set of characters using three rows. Its look depends on the font design, as large type pieces can be different in different fonts.
 
 If you want to learn more about Large Type Pieces, try `curl https://raw.githubusercontent.com/PhMajerus/Documents/main/HowTos/HowTo%20Large%20Type%20Pieces.txt`.
 
@@ -65,7 +65,7 @@ Note the character set must be selected and then restored when using this FIGfon
 ![phm-lcdmatrix](images/phm-lcdmatrix.png)
 
 This font uses Unicode 16.0 octants characters to create a monospaced retro low-rez font like on LCD and LED signboards, and 8-bit computers.
-The characters are 6×8 semi-pixels, inspired by the Motorola MC6847 character generator, Tatung Einstein TC-01, TRS-80, and other computers of the 1980's.
+The characters are 6×8 pseudo-pixels, inspired by the Motorola MC6847 character generator, Tatung Einstein TC-01, TRS-80, and other computers of the 1980's.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
 
@@ -160,7 +160,7 @@ Note many of my fonts use ANSI/VT control sequences, which FIGlet does not suppo
 To create text that spans several lines, the `fold` utility can be used to prepare the text in advance.
 For example:
 ```bash
-uname -a | fold -sw 20 | figlet -f /mnt/c/Projects/Linux\ Misc/FIGfonts/Release/fonts/phm-beyondneo-red.flf -w 9999 -C utf8
+uname -a | fold -sw 20 | figlet -f phm-beyondneo-red -w 9999 -C utf8
 ```
 This takes the output of `uname`, formats it for lines of 20 characters max, breaking it at spaces instead of in words, then uses `figlet` to convert that to large colorful characters.
 
