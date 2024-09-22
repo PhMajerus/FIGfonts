@@ -110,7 +110,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the ISO 8859-1 Latin-1 characters set.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the ISO 8859-1 and Windows 1252 Latin-1 characters sets.
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -silver
