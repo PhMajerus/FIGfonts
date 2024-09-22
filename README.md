@@ -170,3 +170,7 @@ This takes the output of `uname`, formats it for lines of 20 characters max, bre
 ---
 
 -- Philippe Majerus, September 2024
+
+---
+
+If you enjoy ANSI-art and Unicode semigraphics, also check out [my cowsay files collection](https://github.com/PhMajerus/CowFiles)
