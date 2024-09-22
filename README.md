@@ -110,15 +110,8 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the ISO 8859-1 Latin 1 characters set.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the ISO 8859-1 Latin-1 characters set.
 Several versions are available with different color schemes or compatible with plain-text.
-
-#### phm-beyondneo-mono
-![phm-beyondneo-mono](images/phm-beyondneo-mono.png)
-
-This is the monochrome version of Beyond Neo. it is designed without any ANSI/VT escape sequence, making it compatible with plain-text and VT-unaware utilities.
-
-_Remember to use `figlet -f phm-beyondneo-mono -C utf8` to access Unicode characters (including ISO 8859-1)._
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -silver
 ![phm-beyondneo-red](images/phm-beyondneo-red.png)
@@ -138,6 +131,13 @@ They require `-w 9999` to avoid misplaced line breaks.
 They do not work at all in TOIlet 0.3, as escape sequences get removed.
 
 _Remember to use `figlet -f phm-beyondneo-red -C utf8 -w 9999` to access Unicode characters (including ISO 8859-1) and to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
+
+#### phm-beyondneo-mono
+![phm-beyondneo-mono](images/phm-beyondneo-mono.png)
+
+This is the monochrome version of Beyond Neo. it is designed without any ANSI/VT escape sequence, making it compatible with plain-text and VT-unaware utilities.
+
+_Remember to use `figlet -f phm-beyondneo-mono -C utf8` to access Unicode characters (including ISO 8859-1)._
 
 
 ## Using & installing FIGfonts
