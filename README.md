@@ -113,7 +113,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 13.0 Symbols for Legacy Computing. It supports the ISO 8859-1 and Windows 1252 Latin-1 characters sets.
 Several versions are available with different color schemes or compatible with plain-text.
 
-#### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -silver
+#### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver
 ![phm-beyondneo-red](images/phm-beyondneo-red.png)
 ![phm-beyondneo-green](images/phm-beyondneo-green.png)
 ![phm-beyondneo-blue](images/phm-beyondneo-blue.png)
@@ -121,9 +121,10 @@ Several versions are available with different color schemes or compatible with p
 ![phm-beyondneo-purple](images/phm-beyondneo-purple.png)
 ![phm-beyondneo-cyan](images/phm-beyondneo-cyan.png)
 ![phm-beyondneo-orange](images/phm-beyondneo-orange.png)
+![phm-beyondneo-pink](images/phm-beyondneo-pink.png)
 ![phm-beyondneo-silver](images/phm-beyondneo-silver.png)
 
-These are the red, green, blue, yellow, purple, cyan, orange, and silver color schemes of Beyond Neo.
+These are the red, green, blue, yellow, purple, cyan, orange, pink, and silver color schemes of Beyond Neo.
 They require 256 colors ANSI/VT escape sequences support.
 
 They work in FIGlet 2.2.5, but the width computation gets confused, so they can only be used for single lines.
