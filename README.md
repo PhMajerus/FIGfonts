@@ -114,15 +114,7 @@ This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver
-![phm-beyondneo-red](images/phm-beyondneo-red.png)
-![phm-beyondneo-green](images/phm-beyondneo-green.png)
-![phm-beyondneo-blue](images/phm-beyondneo-blue.png)
-![phm-beyondneo-yellow](images/phm-beyondneo-yellow.png)
-![phm-beyondneo-purple](images/phm-beyondneo-purple.png)
-![phm-beyondneo-cyan](images/phm-beyondneo-cyan.png)
-![phm-beyondneo-orange](images/phm-beyondneo-orange.png)
-![phm-beyondneo-pink](images/phm-beyondneo-pink.png)
-![phm-beyondneo-silver](images/phm-beyondneo-silver.png)
+![phm-beyondneo-colors](images/phm-beyondneo-colors.png)
 
 These are the red, green, blue, yellow, purple, cyan, orange, pink, and silver color schemes of Beyond Neo.
 They require 256 colors ANSI/VT escape sequences support.
