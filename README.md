@@ -175,6 +175,13 @@ uname -a | fold -sw 20 | figlet -f phm-beyondneo-red -w 9999 -C utf8
 ```
 This takes the output of `uname`, formats it for lines of 20 characters max, breaking it at spaces instead of in words, then uses `figlet` to convert that to large colorful characters.
 
+If you want to use only uppercase or lowercase letters from a font that supports both, convert the text in advance.
+For example:
+```bash
+date | tr [:lower:] [:upper:] | figlet -f phm-slanted -w 130 -C utf8
+date | tr [:upper:] [:lower:] | figlet -f phm-slanted -w 130 -C utf8
+```
+
 ---
 
 -- Philippe Majerus, September 2024
