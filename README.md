@@ -108,7 +108,7 @@ It uses four rows and supports the base ASCII characters set.
 ![phm-slanted](images/phm-slanted.png)
 
 This font uses Unicode 13.0 smooth mosaic and sextant characters.
-It uses six rows and supports the base ASCII characters set.
+It uses six rows and supports the ISO 8859-1 and Windows 1252 Latin-1 characters sets.
 
 
 ### beyond-blue
