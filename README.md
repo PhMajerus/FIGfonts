@@ -111,6 +111,18 @@ This font uses Unicode 13.0 smooth mosaic and sextant characters.
 It uses six rows and supports the ISO 8859-1 and Windows 1252 Latin-1 characters sets.
 
 
+### phm-chisel
+![phm-chisel](images/phm-chisel.png)
+
+This font uses Unicode 13.0 smooth mosaic and sextant characters, as well as some quadrants.
+It uses six rows and supports the base ASCII characters set.
+
+It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
+It does not work at all in TOIlet 0.3, as escape sequences get removed.
+
+_Remember to use `figlet -f phm-chisel -w 9999` to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
+
+
 ### beyond-blue
 ![beyond-blue](images/beyond-blue.png)
 
