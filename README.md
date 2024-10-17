@@ -122,6 +122,17 @@ It uses six rows and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 cha
 It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
 It does not work at all in TOIlet 0.3, as escape sequences get removed.
 
+Note you can use the `sed` utility to replace colors.
+The font uses colors 97 and 107 for highlight, 37 and 47 for light, and 90 and 100 for shadow. Always set both foreground and background colors of the same brightness to the same color.
+The following set of replacements will change the 3 original grays to red (31 and 41), green (32 and 42), and yellow/brown (33 and 43):
+```bash
+hostname | figlet -f phm-chisel -C utf8 -w 9999 -n | sed -e 's/97/31/g' -e 's/107/41/g'  -e 's/37/32/g' -e 's/47/42/g' -e 's/90/33/g' -e 's/100/43/g'
+```
+It is also possible to use 256-colors or 24-bit colors for finer control, here for a pink gradient using the 256-colors palette:
+```bash
+hostname | figlet -f phm-chisel -C utf8 -w 9999 -n | sed -e 's/97/38;5;218/g' -e 's/107/48;5;218/g'  -e 's/37/38;5;211/g' -e 's/47/48;5;211/g' -e 's/90/38;5;168/g' -e 's/100/48;5;168/g'
+```
+
 _Remember to use `figlet -f phm-chisel -C utf8 -w 9999` to access Unicode characters and to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
 
