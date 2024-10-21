@@ -117,7 +117,7 @@ _Remember to use `figlet -f phm-slanted -C utf8` to access Unicode characters._
 ![phm-chisel](images/phm-chisel.png)
 
 This font uses Unicode 13.0 smooth mosaic and sextant characters, as well as some quadrants, and requires 16 colors ANSI/VT escape sequences support.
-It uses six rows and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, and Japanese half-width Katakana.
+It uses six rows and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, and Japanese Katakana.
 
 It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
 It does not work at all in TOIlet 0.3, as escape sequences get removed.
