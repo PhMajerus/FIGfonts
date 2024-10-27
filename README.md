@@ -170,10 +170,10 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, and Japanese Katakana (and Hiragana as Katakana).
 Several versions are available with different color schemes or compatible with plain-text.
 
-#### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver
+#### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
 ![phm-beyondneo-colors](images/phm-beyondneo-colors.png)
 
-These are the red, green, blue, yellow, purple, cyan, orange, pink, and silver color schemes of Beyond Neo.
+These are the red, green, blue, yellow, purple, cyan, orange, pink, silver, and gold color schemes of Beyond Neo.
 They require 256 colors ANSI/VT escape sequences support.
 
 They work in FIGlet 2.2.5, but the width computation gets confused, so they can only be used for single lines.
