@@ -159,6 +159,8 @@ This font was designed by Strahd(ST) & Roy/SAC as `BEYONDX.TDF` for TheDRAW, an 
 I converted it to a FIGlet font from the original file.
 It uses characters from the US (437) codepage and ANSI/VT escape sequences for colors to create large colorful 9-rows characters.
 
+The original TDF file contained several color schemes, but I only converted the blue one for now, as it is mostly intended as a historical reference for my own Beyond Neo font below.
+
 It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
 It does not work at all in TOIlet 0.3, as escape sequences get removed.
 
@@ -167,7 +169,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 768 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Japanese Katakana (and Hiragana as Katakana), and Cyrillic (MS-DOS 866).
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 773 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Japanese Katakana (and Hiragana as Katakana), and Cyrillic.
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
