@@ -28,11 +28,9 @@ _Remember to use `figlet -f phm-smallvt -C utf8 -w 9999` to access Unicode chara
 ![hp2640-largetype](images/hp2640-largetype.png)
 
 This is a FIGlet version of the example Large Type Pieces (Unicode 16.0) ASCII font provided by Hewlett-Packard in their HP 2641A/2645A/2645S Display Station Reference Manual, Table B-16.
-It is a reference font for large type pieces introduced in Unicode 16.0 but only contains the 96 base ASCII characters.
+It is a reference font for large type pieces introduced in Unicode 16.0 but only contains the 96 base ASCII characters. It is mostly intended as a historical reference for my own Large Type font below.
 
 It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants to build a smooth set of characters using three rows. Its look depends on the font design, as large type pieces can be different in different fonts.
-
-It is mostly intended as a historical reference for my own Large Type font below.
 
 If you want to learn more about Large Type Pieces, try `curl https://raw.githubusercontent.com/PhMajerus/Documents/main/HowTos/HowTo%20Large%20Type%20Pieces.txt`.
 
