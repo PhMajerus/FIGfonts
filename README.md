@@ -43,7 +43,7 @@ This FIGfont requires the terminal to support Large Type Pieces characters to di
 This is my main Large Type Pieces (Unicode 16.0) font, containing 1416 characters covering ASCII, Latin-1, Latin Extended-A, Latin Extended-B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana, some mathematical operators and symbols, and more.
 
 It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
-It also uses Sextants and Octants for some non-alphabetical characters such as Braille, outlined letters and 7-segment digits.
+It also uses Sextants and Octants for some non-alphabetical characters such as Braille, outlined letters, and 7-segment digits.
 Note that because of the limited size, capital letters (uppercase) do not have accents, and small letter (lowercase) are missing some accents, such as marks appearing below characters.
 
 If you want to learn more about Large Type Pieces, try `curl https://raw.githubusercontent.com/PhMajerus/Documents/main/HowTos/HowTo%20Large%20Type%20Pieces.txt`.
