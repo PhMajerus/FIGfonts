@@ -76,6 +76,17 @@ The characters are 6×8 pseudo-pixels, inspired by the Motorola MC6847 character
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
 
 
+### phm-cga
+![phm-cga](images/phm-cga.png)
+
+This font uses Unicode 16.0 octants characters to recreate the original IBM CGA bold character set as a large font.
+The characters are 8×8 pseudo-pixels, rendered as 4×2 octants characters. It uses two rows and supports codepage 437.
+
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+
+_Remember to use `figlet -f phm-cga -C utf8` to access Unicode characters._
+
+
 ### phm-blocky
 ![phm-blocky](images/phm-blocky.png)
 
