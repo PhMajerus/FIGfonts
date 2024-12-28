@@ -40,7 +40,7 @@ This FIGfont requires the terminal to support Large Type Pieces characters to di
 ### phm-largetype
 ![phm-largetype](images/phm-largetype.png)
 
-This is my main Large Type Pieces (Unicode 16.0) font, containing 1683 characters covering ASCII, Latin-1, Latin Extended-A, Latin Extended-B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana, Braille, some mathematical operators and symbols, and more.
+This is my main Large Type Pieces (Unicode 16.0) font, containing 1685 characters covering ASCII, Latin-1, Latin Extended-A, Latin Extended-B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana, Braille, some mathematical operators and symbols, and more.
 
 It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
 It also uses Sextants and Octants for some non-alphabetical characters such as outlined letters and 7-segment digits.
@@ -181,7 +181,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 2087 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 72 ideographs (mostly for dates, times, and numbers in Chinese numerals), and more.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 2089 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 72 ideographs (mostly for dates, times, and numbers in Chinese numerals), and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
@@ -244,7 +244,7 @@ date | tr [:upper:] [:lower:] | figlet -f phm-slanted -w 130 -C utf8
 
 ---
 
--- Philippe Majerus, October 2024
+-- Philippe Majerus, October 2024 to December 2024
 
 ---
 
