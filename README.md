@@ -101,12 +101,22 @@ _Remember to use `figlet -f phm-cga -C utf8` to access Unicode characters._
 ### phm-vga
 ![phm-vga](images/phm-vga.png)
 
-This font uses Unicode 16.0 octants characters to recreate the original IBM VGA and MS-DOS CP437 character set for 80 columns × 50 lines mode as a large font.
-The characters are 8×8 pseudo-pixels, rendered as 4×2 octants characters. It uses two rows and supports codepage 437.
+This font uses Unicode 16.0 octants characters to recreate the original IBM VGA and MS-DOS CP437 character set for 80 columns × 25 lines mode as a large font. This is probably the font most people remember as the MS-DOS font.
+The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It uses four rows and supports codepage 437.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
 
 _Remember to use `figlet -f phm-vga -C utf8` to access Unicode characters._
+
+### phm-vga-square
+![phm-vga-square](images/phm-vga-square.png)
+
+Similar to phm-vga above, but based on the 80 columns × 50 lines mode, which are square characters.
+The characters are 8×8 pseudo-pixels, rendered as 4×2 octants characters. It uses two rows and supports codepage 437.
+
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+
+_Remember to use `figlet -f phm-vga-square -C utf8` to access Unicode characters._
 
 
 ### phm-blocky
@@ -266,7 +276,7 @@ date | tr [:upper:] [:lower:] | figlet -f phm-slanted -w 130 -C utf8
 
 ---
 
--- Philippe Majerus, October 2024 to December 2024
+-- Philippe Majerus, October 2024 to January 2025
 
 ---
 
