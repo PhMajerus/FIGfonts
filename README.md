@@ -119,6 +119,19 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-vga-square -C utf8` to access Unicode characters._
 
 
+### phm-dosv
+![phm-dosv](images/phm-dosv.png)
+
+This font uses Unicode 16.0 octants characters to recreate the original Japanese DOS/V character set.
+This is the font used on Japanese versions of IBM PC-DOS and MS-DOS with support for code page 932 (Shift-JIS).
+For people not familiar with DOS/V, it contained a special text-mode display driver as well as a software font to be able to render multi-byte character sets (MBCS) such as CP932. This made it possible to support thousands of ideographs (kanji) required by JIS X 0208.
+This font is based on the original glyphs from `ANK16.FNT` and `KANJI16.FNT`, which together make the Japanese software font from MS-DOS 6.2, and contains all of the characters supported by CP932. This might just make it the largest FIGlet font ever, as it contains 7511 characters!
+
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+
+_Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
+
+
 ### phm-blocky
 ![phm-blocky](images/phm-blocky.png)
 
@@ -276,7 +289,7 @@ date | tr [:upper:] [:lower:] | figlet -f phm-slanted -w 130 -C utf8
 
 ---
 
--- Philippe Majerus, October 2024 to January 2025
+-- Philippe Majerus, October 2024 to March 2025
 
 ---
 
