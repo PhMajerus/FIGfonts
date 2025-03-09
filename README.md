@@ -128,7 +128,7 @@ Just like phm-vga above is probably the font most people remember as the MS-DOS 
 The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels for full-width, rendered as 4×4 and 8×4 octants characters respectively. It uses four rows and supports codepage 932.
 
 For people not familiar with DOS/V, it contained a special text-mode display driver as well as a software font to be able to render multi-byte character sets (MBCS) such as CP932. This made it possible to support thousands of ideographs (kanji) required by JIS X 0208.
-This font is based on the original glyphs from `ANK16.FNT` and `KANJI16.FNT`, which together make the Japanese software font from MS-DOS 6.2, and contains all of the characters supported by CP932. This might just make it the largest FIGlet font ever, as it contains 7511 characters!
+This font is based on the original glyphs from `ANK16.FNT` and `KANJI16.FNT`, which together make the Japanese software font from MS-DOS 6.2, and contains all of the characters supported by CP932. This might just make it the largest FIGlet font ever, as it contains 7514 characters!
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
 
