@@ -122,7 +122,7 @@ _Remember to use `figlet -f phm-vga-square -C utf8` to access Unicode characters
 ### phm-dosv
 ![phm-dosv](images/phm-dosv.png)
 
-This font uses Unicode 16.0 octants characters to recreate the original Japanese DOS/V character set.
+This font uses Unicode 16.0 octants characters to recreate the original Microsoft Japanese DOS/V character set.
 This is the font used on Japanese versions of IBM PC-DOS and MS-DOS with support for code page 932 (Shift-JIS).
 Just like phm-vga above is probably the font most people remember as the MS-DOS font, this is the one Japanese users remember.
 The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels for full-width, rendered as 4×4 and 8×4 octants characters respectively. It uses four rows and supports codepage 932.
@@ -229,7 +229,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 2394 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 97 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 217 color symbols and emojis, and more.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 2395 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 97 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 217 color symbols and emojis, and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
