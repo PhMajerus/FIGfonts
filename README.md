@@ -40,7 +40,7 @@ This FIGfont requires the terminal to support Large Type Pieces characters to di
 ### phm-largetype
 ![phm-largetype](images/phm-largetype.png)
 
-This is my main Large Type Pieces (Unicode 16.0) font, containing 1765 characters covering ASCII, Latin-1, Latin Extended-A, Latin Extended-B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana, Braille, some mathematical operators and symbols, and more.
+This is my main Large Type Pieces (Unicode 16.0) font, containing 1843 characters covering ASCII, Latin-1, Latin Extended-A, Latin Extended-B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana, Braille, some mathematical operators and symbols, and more.
 
 It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
 It also uses Sextants and Octants for some non-alphabetical characters such as outlined letters and 7-segment digits.
