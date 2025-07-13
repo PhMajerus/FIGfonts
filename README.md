@@ -135,6 +135,17 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
 
 
+### phm-shinonome
+![phm-shinonome](images/phm-shinonome.png)
+
+This font uses Unicode 16.0 octants characters to display the Shinonome12/東雲12 (Shinonome 12dot) bitmap font, originally designed by Yasuyuki Furukawa / 古川 泰之様 and generously released into the public domain.
+The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 (Latin 1), JIS X 0201, and JIS X 0208, which also contains basic Greek and Cyrillic.
+
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+
+_Remember to use `figlet -f phm-shinonome -C utf8` to access Unicode characters._
+
+
 ### phm-blocky
 ![phm-blocky](images/phm-blocky.png)
 
