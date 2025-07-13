@@ -139,7 +139,7 @@ _Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
 ![phm-shinonome](images/phm-shinonome.png)
 
 This font uses Unicode 16.0 octants characters to display the Shinonome12/東雲12 (Shinonome 12dot) bitmap font, originally designed by Yasuyuki Furukawa / 古川 泰之様 and generously released into the public domain.
-The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 (Latin 1), JIS X 0201, and JIS X 0208, which also contains basic Greek and Cyrillic.
+The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 (Latin 1), JIS X 0201, and JIS X 0208, which also contains basic Greek and Cyrillic for a total of 7136 characters.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
 
@@ -303,7 +303,7 @@ date | tr [:upper:] [:lower:] | figlet -f phm-slanted -w 130 -C utf8
 
 ---
 
--- Philippe Majerus, October 2024 to June 2025
+-- Philippe Majerus, October 2024 to July 2025
 
 ---
 
