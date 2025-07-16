@@ -129,7 +129,7 @@ The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels f
 
 For people not familiar with DOS/V, it contained a special text-mode display driver as well as a software font to be able to render multi-byte character sets (MBCS) such as CP932. This made it possible to support thousands of ideographs (kanji) required by JIS X 0208.
 This font is based on the original glyphs from `ANK16.FNT` and `KANJI16.FNT`, which together make the Japanese software font from MS-DOS 6.2/V, and contains all of the characters supported by CP932.
-That includes all JIS X 0208 kanji (2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs), and NEC PC-98 and IBM DOS/V extensions (361 kanji). This might just make it the largest FIGlet font ever, as it contains 7524 characters!
+That includes all JIS X 0208 kanji (2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs), and NEC PC-98 and IBM DOS/V extensions (361 kanji). This might just make it the largest FIGlet font ever, as it contains a total of 7524 characters!
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
 
@@ -140,7 +140,7 @@ _Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
 ![phm-shinonome](images/phm-shinonome.png)
 
 This font uses Unicode 16.0 octants characters to display the Shinonome12 / 東雲12 (Shinonome 12dot) bitmap font, originally designed by Yasuyuki Furukawa / 古川 泰之様 and generously released into the public domain.
-The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 (Latin 1), JIS X 0201, and JIS X 0208 (all 2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs), which also contains basic Greek and Cyrillic for a total of 7141 characters. Note that does not include the NEC PC-98 and IBM DOS/V extensions (361 ideographs), so it does not support the full codepage 932.
+The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 (Latin 1), JIS X 0201, and JIS X 0208 (all 2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs), which also contains basic Greek and Cyrillic for a total of 7173 characters. Note that does not include all the NEC PC-98 and IBM DOS/V extensions (361 ideographs), so it does not support the full codepage 932.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
 
