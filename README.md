@@ -141,7 +141,7 @@ _Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
 
 This font uses Unicode 16.0 octants characters to display the Shinonome12 / 東雲12 (Shinonome 12dot Gothic/sans-serif) bitmap font, originally designed by Yasuyuki Furukawa / 古川 泰之様 and generously released into the public domain.
 This is a font that was very popular on early Japanese Unix X Window System environments (X11 on FreeBSD and Linux systems). The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 and Windows codepage 1252 (Latin 1), MS-DOS codepage 437 (IBM PC/en-US), JIS X 0201 and JIS X 0208 (all 2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs), which also contains basic Greek and Cyrillic. Note that does not include all the NEC PC-98 and IBM DOS/V extensions (361 ideographs), so it does not support the full codepage 932 yet, but these are also being added gradually.
-This might just make it the largest FIGlet font ever, as it already contains a total of 7654 characters!
+This might just make it the largest FIGlet font ever, as it already contains a total of 7667 characters!
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
 
