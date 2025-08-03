@@ -245,7 +245,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 2654 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 120 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 228 color symbols and emojis, and more.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 2655 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 120 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 228 color symbols and emojis, and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
@@ -308,7 +308,7 @@ date | tr [:upper:] [:lower:] | figlet -f phm-slanted -w 130 -C utf8
 
 ---
 
--- Philippe Majerus, October 2024 to July 2025
+-- Philippe Majerus, October 2024 to August 2025
 
 ---
 
