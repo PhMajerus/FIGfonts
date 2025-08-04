@@ -144,7 +144,7 @@ This is a font that was very popular on early Japanese Unix X Window System envi
 I extended it to support the original IBM PC (MS-DOS codepage 437), DOS/V (codepage 932), Windows Latin-1 (codepage 1252), Braille, and more symbols.
 
 The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 and Windows codepage 1252 (Latin 1), MS-DOS codepage 437 (IBM PC/en-US), JIS X 0201 and JIS X 0208 (all 2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs, basic Greek and Cyrillic), NEC PC-98 and IBM DOS/V extensions (361 ideographs and more symbols, codepage 932), and Braille.
-This might just make it the largest FIGlet font ever, as it contains a total of 8513 characters!
+This might just make it the largest FIGlet font ever, as it contains a total of 8531 characters!
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
 
