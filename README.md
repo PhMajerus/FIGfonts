@@ -308,7 +308,7 @@ date | tr [:upper:] [:lower:] | figlet -f phm-slanted -w 130 -C utf8
 
 ---
 
--- Philippe Majerus, October 2024 to August 2025
+-- Philippe Majerus, October 2024 to December 2025
 
 ---
 
