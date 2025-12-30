@@ -73,7 +73,7 @@ Note the character set must be selected and then restored when using this FIGfon
 This font uses Unicode 16.0 octants characters to create a monospaced retro low-rez font like on LCD and LED signboards, and 8-bit computers.
 The characters are 6×8 pseudo-pixels, inspired by the Motorola MC6847 character generator, Tatung Einstein TC-01, TRS-80, and other computers of the 1980's.
 
-It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 
 ### phm-c64
@@ -82,7 +82,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 This font uses Unicode 16.0 octants characters to recreate the original Commodore 64 character set as a large font.
 The characters are 8×8 pseudo-pixels, rendered as 4×2 octants characters. It uses two rows and only includes characters originally found in the Commodore 64 chargen ROM. This means a few ASCII characters are missing, as PETSCII was based on an early version of ASCII.
 
-It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 _Remember to use `figlet -f phm-c64 -C utf8` to access Unicode characters._
 
@@ -93,7 +93,7 @@ _Remember to use `figlet -f phm-c64 -C utf8` to access Unicode characters._
 This font uses Unicode 16.0 octants characters to recreate the original IBM CGA bold character set as a large font. It is one of the original font for the launch of the IBM PC.
 The characters are 8×8 pseudo-pixels, rendered as 4×2 octants characters. It uses two rows and supports codepage 437.
 
-It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 _Remember to use `figlet -f phm-cga -C utf8` to access Unicode characters._
 
@@ -104,7 +104,7 @@ _Remember to use `figlet -f phm-cga -C utf8` to access Unicode characters._
 This font uses Unicode 16.0 octants characters to recreate the original IBM VGA and MS-DOS CP437 character set for 80 columns × 25 lines mode as a large font. This is probably the font most people remember as the MS-DOS font.
 The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It uses four rows and supports codepage 437.
 
-It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 _Remember to use `figlet -f phm-vga -C utf8` to access Unicode characters._
 
@@ -114,7 +114,7 @@ _Remember to use `figlet -f phm-vga -C utf8` to access Unicode characters._
 Similar to phm-vga above, but based on the 80 columns × 50 lines mode, which are square characters.
 The characters are 8×8 pseudo-pixels, rendered as 4×2 octants characters. It uses two rows and supports codepage 437.
 
-It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 _Remember to use `figlet -f phm-vga-square -C utf8` to access Unicode characters._
 
@@ -131,7 +131,7 @@ For people not familiar with DOS/V, it contained a special text-mode display dri
 This font is based on the original glyphs from `ANK16.FNT` and `KANJI16.FNT`, which together make the Japanese software font from MS-DOS 6.2/V, and contains all of the characters supported by CP932.
 That includes all JIS X 0208 kanji (2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs), and NEC PC-98 and IBM DOS/V extensions (361 kanji). This makes it one of the largest FIGlet font ever, with a total of 7524 characters, second only to phm-shinonome below.
 
-It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 _Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
 
@@ -146,7 +146,7 @@ I extended it to support the original IBM PC (MS-DOS codepage 437), DOS/V (codep
 The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 and Windows codepage 1252 (Latin 1), MS-DOS codepage 437 (IBM PC/en-US), JIS X 0201 and JIS X 0208 (all 2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs, basic Greek and Cyrillic), NEC PC-98 and IBM DOS/V extensions (361 ideographs and more symbols, codepage 932), and Braille.
 This might just make it the largest FIGlet font ever, as it contains a total of 8732 characters!
 
-It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octants characters.
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 _Remember to use `figlet -f phm-shinonome -C utf8` to access Unicode characters._
 
@@ -184,7 +184,7 @@ It uses four rows and supports the base ASCII characters set.
 ![phm-slanted](images/phm-slanted.png)
 
 This font uses Unicode 13.0 smooth mosaic and sextant characters.
-It uses six rows and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets.
+It uses six rows and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 character sets.
 
 _Remember to use `figlet -f phm-slanted -C utf8` to access Unicode characters._
 
@@ -245,7 +245,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3088 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 120 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 258 color symbols and emojis, and more.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3092 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 120 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 259 color symbols and emojis, and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
