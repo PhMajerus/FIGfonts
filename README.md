@@ -76,6 +76,17 @@ The characters are 6×8 pseudo-pixels, inspired by the Motorola MC6847 character
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 
+### phm-minecraft
+![phm-minecraft](images/phm-minecraft.png)
+
+This font uses Unicode 16.0 octants characters to recreate the Minecraft font by Mojang Studios.
+It uses two rows and supports the Latin-1 characters (ISO 8859-1 and Windows codepage 1252).
+
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
+
+_Remember to use `figlet -f phm-minecraft -C utf8` to access Unicode characters._
+
+
 ### phm-c64
 ![phm-c64](images/phm-c64.png)
 
@@ -308,7 +319,7 @@ date | tr [:upper:] [:lower:] | figlet -f phm-slanted -w 130 -C utf8
 
 ---
 
--- Philippe Majerus, October 2024 to December 2025
+-- Philippe Majerus, October 2024 to January 2026
 
 ---
 
