@@ -14,23 +14,23 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 
 | Font | Rows | Chars | ASCII |ISO 8859-1 Latin-1| CP1252 | CP437 | JIS X 0208 | CP932 | More |
 |:-----|---:|---:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|[phm-smallvt](#phm-smallvt)| 4 | 583 |x| | |x| | | |
-|[hp2640-largetype](#hp2640-largetype)| 3 | 103 |x| | | | | | |
-|[phm-largetype](#phm-largetype)| 3 | 2517 |x|x|x|x| | |x|
-|[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |x| | | | | | |
-|[phm-minecraft](#phm-minecraft)| 2 | 220 |x|x|x| | | | |
-|[phm-c64](#phm-c64)| 2 | 184 |x| | | | | |PETSCII|
-|[phm-cga](#phm-cga)| 2 | 264 |x| | |x| | | |
-|[phm-vga](#phm-vga)| 4 | 264 |x| | |x| | | |
-|[phm-vga-square](#phm-vga-square)| 2 | 264 |x| | |x| | | |
-|[phm-dosv](#phm-dosv)| 4 | 7531 |x| | | |x|x|x| |
-|[phm-shinonome](#phm-shinonome)| 3 | 8754 |x|x|x|x|x|x|x|
-|[phm-blocky](#phm-blocky)([-reverse](#phm-blocky-reverse))| 2(4) | 102 |x| | | | | | |
-|[phm-rounded](#phm-rounded)| 4 | 103 |x| | | | | | |
-|[phm-slanted](#phm-slanted)| 6 | 247 |x|x|x| | | | |
-|[phm-chisel](#phm-chisel)| 6 | 629 |x|x|x| | | |x|
-|[beyond-blue](#beyond-blue)| 9 | 102 |x| | | | | | |
-|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3216 |x|x|x|x| | |x|
+|[phm-smallvt](#phm-smallvt)| 4 | 583 |✔︎| | |✔︎| | | |
+|[hp2640-largetype](#hp2640-largetype)| 3 | 103 |✔︎| | | | | | |
+|[phm-largetype](#phm-largetype)| 3 | 2517 |✔︎|✔︎|✔︎|✔︎|kana| |✔︎|
+|[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |✔︎| | | | | | |
+|[phm-minecraft](#phm-minecraft)| 2 | 220 |✔︎|✔︎|✔︎| | | | |
+|[phm-c64](#phm-c64)| 2 | 184 |✔︎| | | | | |PETSCII|
+|[phm-cga](#phm-cga)| 2 | 264 |✔︎| | |✔︎| | | |
+|[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
+|[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
+|[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
+|[phm-shinonome](#phm-shinonome)| 3 | 8754 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-blocky](#phm-blocky)([-reverse](#phm-blocky-reverse))| 2(4) | 102 |✔︎| | | | | | |
+|[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
+|[phm-slanted](#phm-slanted)| 6 | 247 |✔︎|✔︎|✔︎| | | | |
+|[phm-chisel](#phm-chisel)| 6 | 629 |✔︎|✔︎|✔︎| | | |✔︎|
+|[beyond-blue](#beyond-blue)| 9 | 102 |✔︎| | | | | | |
+|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3216 |✔︎|✔︎|✔︎|✔︎|some| |✔︎|
 
 
 ### phm-smallvt
