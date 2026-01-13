@@ -6,10 +6,31 @@
 ## Introduction
 
 This repository contains the fonts I created for the [FIGlet utility](http://www.figlet.org/).
-While most FIGfonts are ASCII-art, I decided to experiment with ANSI/VT coloring and extended Unicode characters as sub-characters.
+While most FIGfonts are ASCII-art, I decided to experiment with ANSI/VT coloring and extended Unicode characters as sub-characters to create denser characters. This makes them more suitable for use as titles and general text than the traditionally very large FIGfonts.
+Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes also JIS X 0208 (Japanese), Emojis,… some contain thousands of characters.
 
 
 ## Fonts in this repository
+
+| Font | Rows | Chars | ASCII |ISO 8859-1 Latin-1| CP1252 | CP437 | JIS X 0208 | CP932 | More |
+|:-----|---:|---:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|[phm-smallvt](#phm-smallvt)| 4 | 583 |x| | |x| | | |
+|[hp2640-largetype](#hp2640-largetype)| 3 | 103 |x| | | | | | |
+|[phm-largetype](#phm-largetype)| 3 | 2517 |x|x|x|x| | |x|
+|[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |x| | | | | | |
+|[phm-minecraft](#phm-minecraft)| 2 | 220 |x|x|x| | | | |
+|[phm-c64](#phm-c64)| 2 | 184 |x| | | | | |PETSCII|
+|[phm-cga](#phm-cga)| 2 | 264 |x| | |x| | | |
+|[phm-vga](#phm-vga)| 4 | 264 |x| | |x| | | |
+|[phm-vga-square](#phm-vga-square)| 2 | 264 |x| | |x| | | |
+|[phm-dosv](#phm-dosv)| 4 | 7531 |x| | | |x|x|x| |
+|[phm-shinonome](#phm-shinonome)| 3 | 8754 |x|x|x|x|x|x|x|
+|[phm-blocky](#phm-blocky)([-reverse](#phm-blocky-reverse))| 2(4) | 102 |x| | | | | | |
+|[phm-rounded](#phm-rounded)| 4 | 103 |x| | | | | | |
+|[phm-slanted](#phm-slanted)| 6 | 247 |x|x|x| | | | |
+|[phm-chisel](#phm-chisel)| 6 | 629 |x|x|x| | | |x|
+|[beyond-blue](#beyond-blue)| 9 | 102 |x| | | | | | |
+|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3216 |x|x|x|x| | |x|
 
 
 ### phm-smallvt
@@ -140,7 +161,7 @@ The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels f
 
 For people not familiar with DOS/V, it contained a special text-mode display driver as well as a software font to be able to render multi-byte character sets (MBCS) such as CP932. This made it possible to support thousands of ideographs (kanji) required by JIS X 0208.
 This font is based on the original glyphs from `ANK16.FNT` and `KANJI16.FNT`, which together make the Japanese software font from MS-DOS 6.2/V, and contains all of the characters supported by CP932.
-That includes all JIS X 0208 kanji (2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs), and NEC PC-98 and IBM DOS/V extensions (361 kanji). This makes it one of the largest FIGlet font ever, with a total of 7524 characters, second only to phm-shinonome below.
+That includes all JIS X 0208 kanji (2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs), and NEC PC-98 and IBM DOS/V extensions (361 kanji). This makes it one of the largest FIGlet font ever, with a total of 7531 characters, second only to phm-shinonome below.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
