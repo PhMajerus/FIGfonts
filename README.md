@@ -32,7 +32,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[beyond-blue](#beyond-blue)| 9 | 102 |✔︎| | | | | | |
 |[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3217 |✔︎|✔︎|✔︎|✔︎|some| |✔︎|
 
-Note fonts that support both CP1252 (Latin-1) and CP437 (US-English) also support CP850 (Multilingual Latin 1), CP858 (Multilingual Latin 1 + Euro), and CP863 (Canadian French).
+Note fonts that support both CP1252 (Latin-1) and CP437 (US-English) also support CP850 (Multilingual Latin 1), CP858 (Multilingual Latin 1 + Euro), CP860 (Portuguese), CP861 (Icelandic), CP863 (Canadian French), and CP865 (Nordic).
 
 ### phm-smallvt
 ![phm-smallvt](images/phm-smallvt.png)
