@@ -12,7 +12,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 
 ## Fonts in this repository
 
-| Font | Rows | Chars | ASCII |ISO 8859-1 Latin-1| CP1252 Latin-1 | CP437 US-English | JIS X 0208 Japanese | CP932 Japanese Shift-JIS | More |
+| Font | Rows | Chars | ASCII | ISO 8859‑1 Latin‑1 | CP 1252 Latin‑1 | CP 437 US‑English | JIS X 0208 Japanese | CP 932 Japanese Shift‑JIS | More |
 |:-----|---:|---:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |[phm-smallvt](#phm-smallvt)| 4 | 583 |✔︎| | |✔︎| | | |
 |[hp2640-largetype](#hp2640-largetype)| 3 | 103 |✔︎| | | | | | |
@@ -27,7 +27,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-shinonome](#phm-shinonome)| 3 | 8755 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
-|[phm-slanted](#phm-slanted)| 6 | 247 |✔︎|✔︎|✔︎| | | | |
+|[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
 |[phm-chisel](#phm-chisel)| 6 | 637 |✔︎|✔︎|✔︎| |kana| |✔︎|
 |[beyond-blue](#beyond-blue)| 9 | 102 |✔︎| | | | | | |
 |[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3217 |✔︎|✔︎|✔︎|✔︎|partial| |✔︎|
