@@ -28,9 +28,9 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 247 |✔︎|✔︎|✔︎| | | | |
-|[phm-chisel](#phm-chisel)| 6 | 629 |✔︎|✔︎|✔︎| |kana| |✔︎|
+|[phm-chisel](#phm-chisel)| 6 | 637 |✔︎|✔︎|✔︎| |kana| |✔︎|
 |[beyond-blue](#beyond-blue)| 9 | 102 |✔︎| | | | | | |
-|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3217 |✔︎|✔︎|✔︎|✔︎|some| |✔︎|
+|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3217 |✔︎|✔︎|✔︎|✔︎|partial| |✔︎|
 
 Note fonts that support both CP1252 (Latin-1) and CP437 (US-English) also support CP850 (Multilingual Latin 1), CP858 (Multilingual Latin 1 + Euro), CP860 (Portuguese), CP861 (Icelandic), CP863 (Canadian French), and CP865 (Nordic).
 
@@ -226,7 +226,7 @@ _Remember to use `figlet -f phm-slanted -C utf8` to access Unicode characters._
 ![phm-chisel](images/phm-chisel.png)
 
 This font uses Unicode 13.0 smooth mosaic and sextant characters, as well as some quadrants, and requires 16 colors ANSI/VT escape sequences support, and uses six rows.
-It contains 629 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, and Japanese Katakana (and Hiragana as Katakana).
+It contains 637 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, and Japanese Katakana (and Hiragana as Katakana).
 
 It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
 It does not work at all in TOIlet 0.3, as escape sequences get removed.
