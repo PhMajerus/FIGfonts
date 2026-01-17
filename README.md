@@ -24,13 +24,13 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 8858 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 8864 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
 |[phm-chisel](#phm-chisel)| 6 | 637 |✔︎|✔︎|✔︎| |kana| |✔︎|
 |[beyond-blue](#beyond-blue)| 9 | 102 |✔︎| | | | | | |
-|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3217 |✔︎|✔︎|✔︎|✔︎|partial| |✔︎|
+|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3221 |✔︎|✔︎|✔︎|✔︎|partial| |✔︎|
 
 Note fonts that support both CP1252 (Latin-1) and CP437 (US-English) also support CP850 (Multilingual Latin 1), CP858 (Multilingual Latin 1 + Euro), CP860 (Portuguese), CP861 (Icelandic), CP863 (Canadian French), and CP865 (Nordic).
 
@@ -178,7 +178,7 @@ I extended it to support the original IBM PC (MS-DOS codepage 437), DOS/V (codep
 
 The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 and Windows codepage 1252 (Latin 1), MS-DOS codepage 437 (IBM PC/en-US), JIS X 0201 and JIS X 0208 (all 2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs, basic Greek and Cyrillic), NEC PC-98 and IBM DOS/V extensions (361 ideographs and more symbols, codepage 932), and jinmeiyō kanjis (24 ideographs, not yet complete).
 It also contains many symbols supported by MS Gothic / ＭＳ ゴシック from Windows 3.1 to Windows XP, making it mostly compatible with Japanese Windows console before Windows Vista.
-This might just make it the largest FIGlet font ever, as it contains a total of 8858 characters!
+This might just make it the largest FIGlet font ever, as it contains a total of 8864 characters!
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -279,7 +279,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3217 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 120 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 323 color symbols and emojis, and more.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3221 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 124 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 323 color symbols and emojis, and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
