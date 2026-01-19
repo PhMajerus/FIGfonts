@@ -176,7 +176,7 @@ This font uses Unicode 16.0 octants characters to display the Shinonome12 / 東�
 This is a font that was very popular on early Japanese Unix X Window System environments (X11 on FreeBSD and Linux systems).
 I extended it to support the original IBM PC (MS-DOS codepage 437), DOS/V (codepage 932), Windows Latin-1 (codepage 1252), Braille, and more symbols.
 
-The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 and Windows codepage 1252 (Latin 1), MS-DOS codepage 437 (IBM PC/en-US), JIS X 0201 and JIS X 0208 (all 2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs, basic Greek and Cyrillic), NEC PC-98 and IBM DOS/V extensions (361 ideographs and more symbols, codepage 932), and jinmeiyō kanjis (37 ideographs).
+The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 and Windows codepage 1252 (Latin 1), MS-DOS codepage 437 (IBM PC/en-US), JIS X 0201 and JIS X 0208 (all 2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs, basic Greek and Cyrillic), NEC PC-98 and IBM DOS/V extensions (361 ideographs and more symbols, codepage 932), and jinmeiyō kanjis / 人名用漢字 (37 extra ideographs).
 It also contains many symbols supported by MS Gothic / ＭＳ ゴシック from Windows 3.1 to Windows XP, making it mostly compatible with Japanese Windows console before Windows Vista.
 This might just make it the largest FIGlet font ever, as it contains a total of 8970 characters!
 
