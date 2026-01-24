@@ -24,7 +24,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 9592 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 9672 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
@@ -178,7 +178,7 @@ I extended it to support the original IBM PC (MS-DOS codepage 437), DOS/V (codep
 
 The characters are 6×12 pseudo-pixels for half-width and 12×12 pseudo-pixels for full-width, rendered as 3×3 and 6×3 octants characters respectively. It uses three rows and supports ISO 8859-1 and Windows codepage 1252 (Latin 1), MS-DOS codepage 437 (IBM PC/en-US), JIS X 0201 and JIS X 0208 (all 2965 level 1 kanji + 3390 level 2 kanji + 仝 = 6356 ideographs, basic Greek and Cyrillic), NEC PC-98 and IBM DOS/V extensions (361 ideographs and more symbols, codepage 932), and jinmeiyō kanjis / 人名用漢字 (37 extra ideographs).
 It also contains symbols supported by MS Gothic / ＭＳ ゴシック from Windows 3.1 to Windows XP, making it mostly compatible with Japanese Windows console before Windows Vista, as well as a growing number of Emojis (388 so far).
-This might just make it the largest FIGlet font ever, as it currently contains a total of 9592 characters!
+This might just make it the largest FIGlet font ever, as it currently contains a total of 9672 characters!
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
