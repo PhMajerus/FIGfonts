@@ -288,9 +288,6 @@ Several versions are available with different color schemes or compatible with p
 These are the red, green, blue, yellow, purple, cyan, orange, pink, silver, and gold color schemes of Beyond Neo.
 They require 256 colors ANSI/VT escape sequences support.
 
-Beyond Neo supports many languages and emojis.
-![phm-beyondneo-japanese](images/phm-beyondneo-japanese.png)
-
 They work in FIGlet 2.2.5, but the width computation gets confused, so they can only be used for single lines.
 They require `-w 9999` to avoid misplaced line breaks.
 They do not work at all in TOIlet 0.3, as escape sequences get removed.
