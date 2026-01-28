@@ -196,11 +196,11 @@ It uses three rows and supports the following:
 - MS Gothic / ＭＳ ゴシック parity, ensuring compatibility with Japanese Windows console before Vista
 
 **Modern additions**
-- Braille patterns
+- Braille and blocks mosaics patterns
 - A growing set of emojis (396 so far)
 - Additional symbols and pictographs
 
-With 10051 characters, phm‑shinonome is probably the largest FIGlet fonts ever created, unifying historically incompatible Japanese and Western bitmap lineages into a single, terminal‑safe, Unicode‑coherent design.
+With 10051 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying historically incompatible Japanese and Western bitmap lineages into a single, terminal‑safe, Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
