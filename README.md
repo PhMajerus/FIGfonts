@@ -178,24 +178,22 @@ Shinonome was widely used on early Japanese Unix X11 environments (FreeBSD, Linu
 The characters are 6×12 pseudo‑pixels for half‑width and 12×12 pseudo‑pixels for full‑width, rendered as 3×3 and 6×3 octant matrices.
 It uses three rows and supports the following:
 
-**Japanese completeness**
+**Japanese compatibility**
 - JIS X 0201 (half‑width)
 - JIS X 0208 (2965 level‑1 + 3390 level‑2 kanji + 仝 = 6356 ideographs)
 - Jinmeiyō kanji / 人名用漢字 (37 additional ideographs)
 - NEC PC‑98 and IBM DOS/V extensions (361 ideographs and symbols)
 - Full CP932 (MS-DOS/Windows Japanese Shift‑JIS)
+- MS Gothic / ＭＳ ゴシック parity (except for non-Japanese ideographs), ensuring compatibility with Japanese Windows console (Windows 2000 → XP)
 
 **Western and legacy compatibility**
-- ISO 8859‑1 and Windows CP1252 (Latin‑1)
-- MS‑DOS CP437 (IBM PC / en‑US)
+- MS‑DOS CP437 (IBM PC / en‑US) and CP850 (Latin 1)
+- ISO 8859‑1 and Windows CP1252 (Latin 1)
 - Symbols and characters historically present in MS Gothic (Windows 3.1 → XP)
-
-**Windows console parity**
-- Lucida Console parity, ensuring compatibility with Western Windows console before Vista
-- MS Gothic / ＭＳ ゴシック parity, ensuring compatibility with Japanese Windows console before Vista
+- Lucida Console parity, ensuring compatibility with Western Windows console (Windows 2000 → XP)
 
 **Modern additions**
-- Braille and block mosaics patterns
+- Braille and block mosaic patterns
 - A growing set of emojis (402 so far)
 - Additional symbols and pictographs
 
