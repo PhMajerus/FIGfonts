@@ -24,7 +24,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 10051 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 10056 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
@@ -188,19 +188,18 @@ It uses three rows and supports the following:
 **Western and legacy compatibility**
 - ISO 8859‑1 and Windows CP1252 (Latin‑1)
 - MS‑DOS CP437 (IBM PC / en‑US)
-- Basic Greek and Cyrillic
-- Symbols historically present in MS Gothic (Windows 3.1 → XP)
+- Symbols and characters historically present in MS Gothic (Windows 3.1 → XP)
 
 **Windows console parity**
 - Lucida Console parity, ensuring compatibility with Western Windows console before Vista
 - MS Gothic / ＭＳ ゴシック parity, ensuring compatibility with Japanese Windows console before Vista
 
 **Modern additions**
-- Braille and blocks mosaics patterns
-- A growing set of emojis (396 so far)
+- Braille and block mosaics patterns
+- A growing set of emojis (397 so far)
 - Additional symbols and pictographs
 
-With 10051 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying historically incompatible Japanese and Western bitmap lineages into a single, terminal‑safe, Unicode‑coherent design.
+With 10056 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying historically incompatible Japanese and Western bitmap lineages into a single, terminal‑safe, Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
