@@ -24,7 +24,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 10109 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 10144 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
@@ -198,7 +198,7 @@ It uses three rows and supports the following:
 - A growing set of emojis (402 so far)
 - Additional symbols and pictographs
 
-With 10109 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying historically incompatible Japanese and Western bitmap lineages into a single, terminal‑safe, Unicode‑coherent design.
+With 10144 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying historically incompatible Japanese and Western bitmap lineages into a single, terminal‑safe, Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -353,7 +353,7 @@ uname -a | fold -sw 20 | figlet -f phm-beyondneo-red -w 9999 -C utf8
 ```
 This takes the output of `uname`, formats it for lines of 20 characters max, breaking it at spaces instead of in words, then uses `figlet` to convert that to large colorful characters.
 
-If you want to use only uppercase or lowercase letters from a font that supports both, convert the text in advance.
+If you want to use only uppercase or lowercase letters from a font that supports both, convert the text in advance (or use `-C upper`).
 For example:
 ```bash
 date | tr [:lower:] [:upper:] | figlet -f phm-slanted -w 130 -C utf8
