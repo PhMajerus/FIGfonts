@@ -24,7 +24,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 10306 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 10420 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
@@ -184,7 +184,7 @@ It uses three rows and supports the following:
 - Jinmeiyō kanji / 人名用漢字 (37 additional ideographs)
 - NEC PC‑98 and IBM DOS/V extensions (361 ideographs and symbols)
 - Full CP932 (MS-DOS/Windows Japanese Shift‑JIS)
-- MS Gothic / ＭＳ ゴシック parity (except for non-Japanese ideographs), ensuring compatibility with Japanese Windows console (Windows 2000 → XP)
+- MS Gothic / ＭＳ ゴシック 2.x parity (except for non-Japanese ideographs), ensuring compatibility with Japanese Windows console (Windows 2000 → XP), and a growing set of 5.x characters (Windows Vista → 11)
 
 **Western and legacy compatibility**
 - MS‑DOS CP437 (IBM PC / en‑US) and CP850 (Latin 1)
@@ -198,7 +198,7 @@ It uses three rows and supports the following:
 - A growing set of emojis (564 so far)
 - Additional symbols and pictographs
 
-With 10306 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying historically incompatible Japanese and Western bitmap lineages into a single, terminal‑safe, Unicode‑coherent design.
+With 10420 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying historically incompatible Japanese and Western bitmap lineages into a single, terminal‑safe, Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
