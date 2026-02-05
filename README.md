@@ -16,7 +16,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |:-----|---:|---:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |[phm-smallvt](#phm-smallvt)| 4 | 583 |✔︎| | |✔︎| | | |
 |[hp2640-largetype](#hp2640-largetype)| 3 | 103 |✔︎| | | | | | |
-|[phm-largetype](#phm-largetype)| 3 | 2564 |✔︎|✔︎|✔︎|✔︎|kana| |✔︎|
+|[phm-largetype](#phm-largetype)| 3 | 2570 |✔︎|✔︎|✔︎|✔︎|kana| |✔︎|
 |[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |✔︎| | | | | | |
 |[phm-minecraft](#phm-minecraft)| 2 | 220 |✔︎|✔︎|✔︎| | | | |
 |[phm-c64](#phm-c64)| 2 | 184 |✔︎| | | | | |PETSCII|
@@ -24,7 +24,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 10730 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 10787 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
@@ -62,7 +62,7 @@ This FIGfont requires the terminal to support Large Type Pieces characters to di
 ### phm-largetype
 ![phm-largetype](images/phm-largetype.png)
 
-This is my main Large Type Pieces (Unicode 16.0) font, containing 2564 characters covering ASCII, Latin-1, Latin Extended-A, Latin Extended-B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana (JIS X 0201), Braille, some mathematical operators and symbols, and more.
+This is my main Large Type Pieces (Unicode 16.0) font, containing 2570 characters covering ASCII, Latin-1, Latin Extended-A, Latin Extended-B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana (JIS X 0201), Braille, some mathematical operators and symbols, and more.
 
 It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
 It also uses Sextants and Octants for some non-alphabetical characters such as outlined letters and 7-segment digits.
@@ -198,7 +198,7 @@ It uses three rows and supports the following:
 - A growing set of emojis (592 so far)
 - Additional symbols and pictographs
 
-With 10730 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese and Western bitmap lineages into a single Unicode‑coherent design.
+With 10787 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese and Western bitmap lineages into a single Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
