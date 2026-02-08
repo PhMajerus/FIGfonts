@@ -194,7 +194,7 @@ It uses three rows and supports the following:
 
 **Modern additions**
 - Braille and block mosaic patterns
-- More Latin letters (Full Latin-1 Supplement, Latin Extended-A, Latin Extended-B, IPA Extensions blocks, and Latin Extended Additional)
+- More Latin letters (Full Latin-1 Supplement, Latin Extended-A, Latin Extended-B, IPA Extensions, and Latin Extended Additional blocks)
 - A growing set of emojis (592 so far)
 - Additional symbols and pictographs
 
@@ -359,6 +359,15 @@ For example:
 date | tr [:lower:] [:upper:] | figlet -f phm-slanted -w 130 -C utf8
 date | tr [:upper:] [:lower:] | figlet -f phm-slanted -w 130 -C utf8
 ```
+
+FIGlet does not support decomposed Unicode text. It processes each code point independently and has no mechanism for combining base letters with combining marks.
+If your input contains characters that do have precomposed equivalents in Unicode, you should normalize the text to NFC before piping it to FIGlet so that those precomposed characters can be matched by the FIGlet font if it contains them.
+For example:
+```bash
+echo "tiếng Việt" | uconv -x '::NFC;' | figlet -f phm-shinonome -C utf8
+```
+Note that normalization only composes characters when a precomposed form actually exists in Unicode.
+Sequences with multiple combining marks may remain decomposed, and FIGlet cannot render them because it treats each combining mark as an independent, unsupported character.
 
 ---
 
