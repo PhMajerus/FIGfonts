@@ -24,7 +24,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 11102 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 11114 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
@@ -195,10 +195,10 @@ It uses three rows and supports the following:
 **Modern additions**
 - Braille and block mosaic patterns
 - More Latin letters (Full Latin-1 Supplement, Latin Extended-A, Latin Extended-B, IPA Extensions, and Latin Extended Additional blocks)
-- A growing set of emojis (592 so far)
+- A growing set of emojis (601 so far)
 - Additional symbols and pictographs
 
-With 11102 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese and Western bitmap lineages into a single Unicode‑coherent design.
+With 11114 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese and Western bitmap lineages into a single Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -371,7 +371,7 @@ Sequences with multiple combining marks may remain decomposed, and FIGlet cannot
 
 ---
 
--- Philippe Majerus, October 2024 to January 2026
+-- Philippe Majerus, October 2024 to February 2026
 
 ---
 
