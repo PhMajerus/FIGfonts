@@ -24,7 +24,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 11599 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 11603 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
@@ -181,9 +181,10 @@ It uses three rows and supports the following:
 **Japanese compatibility**
 - JIS X 0201 (half‑width)
 - JIS X 0208 (2965 level‑1 + 3390 level‑2 kanji + 仝 = 6356 ideographs)
-- Jinmeiyō kanji / 人名用漢字 (37 additional ideographs)
-- NEC PC‑98 and IBM DOS/V extensions (361 ideographs and symbols)
-- Full CP932 (MS-DOS/Windows Japanese Shift‑JIS)
+- NEC PC‑98 and IBM DOS/V extensions (361 additional ideographs and symbols)
+- Jinmeiyō kanji / 人名用漢字 (37 additional ideographs to support all 863)
+- Jōyō kanji / 常用漢字 2010 (4 additional ideographs to support all 2136)
+- Full CP932 parity (MS-DOS/Windows Japanese Shift‑JIS)
 - MS Gothic / ＭＳ ゴシック 2.x parity (except for non-Japanese ideographs), ensuring compatibility with Japanese Windows console (Windows 2000 → XP), and a growing set of 5.x characters (Windows Vista → 11)
 
 **Western and legacy compatibility**
@@ -198,7 +199,7 @@ It uses three rows and supports the following:
 - A growing set of emojis (609 so far)
 - Additional symbols and pictographs
 
-With 11599 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
+With 11603 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
