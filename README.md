@@ -24,13 +24,13 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 11790 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 11797 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
 |[phm-chisel](#phm-chisel)| 6 | 637 |✔︎|✔︎|✔︎| |kana| |✔︎|
 |[beyond-blue](#beyond-blue)| 9 | 102 |✔︎| | | | | | |
-|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3255 |✔︎|✔︎|✔︎|✔︎|partial| |✔︎|
+|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3256 |✔︎|✔︎|✔︎|✔︎|partial| |✔︎|
 
 Note fonts that support both CP1252 (Latin-1) and CP437 (US-English) also support CP850 (Multilingual Latin 1), CP858 (Multilingual Latin 1 + Euro), CP860 (Portuguese), CP861 (Icelandic), CP863 (Canadian French), and CP865 (Nordic).
 
@@ -196,10 +196,10 @@ It uses three rows and supports the following:
 **Modern additions**
 - Braille, block mosaic patterns, block diagonals, large type pieces, and other Symbols for Legacy Computing
 - More Latin letters (Full Latin-1 Supplement, Latin Extended-A, Latin Extended-B, IPA Extensions, and Latin Extended Additional blocks)
-- A growing set of emojis (624 so far)
+- A growing set of emojis (625 so far)
 - Additional symbols and pictographs
 
-With 11790 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
+With 11797 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -300,7 +300,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ### PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3255 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 138 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 329 color symbols and emojis, and more.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3256 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 138 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 330 color symbols and emojis, and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 #### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
