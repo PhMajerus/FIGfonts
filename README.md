@@ -196,7 +196,7 @@ It uses three rows and supports the following:
 **Modern additions**
 - Braille, block mosaic patterns, block diagonals, large type pieces, and other Symbols for Legacy Computing
 - More Latin letters (Full Latin-1 Supplement, Latin Extended-A, Latin Extended-B, IPA Extensions, and Latin Extended Additional blocks)
-- A growing set of emojis (609 so far)
+- A growing set of emojis (610 so far)
 - Additional symbols and pictographs
 
 With 11767 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
