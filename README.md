@@ -24,7 +24,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
 |[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 12244 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
+|[phm-shinonome](#phm-shinonome)| 3 | 12282 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
@@ -185,22 +185,22 @@ It uses three rows and supports the following:
 - Jinmeiyō kanji / 人名用漢字 (37 additional ideographs to support all 863)
 - Jōyō kanji / 常用漢字 2010 (4 additional ideographs to support all 2136)
 - Full CP932 parity (MS-DOS/Windows Japanese Shift‑JIS)
-- MS Gothic / ＭＳ ゴシック 2.x parity (except for non-Japanese ideographs), ensuring compatibility with Japanese Windows console (Windows 2000 → XP), and most of current 5.x characters (Windows Vista → 11, only missing some arrows and symbols)
+- MS Gothic / ＭＳ ゴシック 2.0 parity (except for non-Japanese ideographs), ensuring compatibility with Japanese Windows console (Windows 2000 → XP), and most of current 5.32 characters (Windows Vista → 11, only missing some arrows and symbols)
 
 **Western and legacy compatibility**
 - MS‑DOS CP437 (IBM PC / en‑US) and CP850 (Latin 1)
 - ISO 8859‑1 and Windows CP1252 (Latin 1)
-- Symbols and characters historically present in MS Gothic (Windows 3.1 → XP)
-- Lucida Console parity, ensuring compatibility with Western Windows console (Windows NT4 → Vista)
-- Most of Cascadia characters, improving compatibility with Windows Terminal (Windows 10 → 11)
+- Symbols and characters historically present in MS Gothic (Windows 3.1 → XP), including Greek and Cyrillic
+- Lucida Console 5.01 parity, ensuring compatibility with Western Windows console (Windows NT4 → Vista)
+- Cascadia 2407.24 parity, ensuring compatibility with Windows Terminal and Visual Studio (Windows 10 → 11)
 
 **Modern additions**
-- Braille, block mosaic patterns, block diagonals, large type pieces, and other Symbols for Legacy Computing
+- Braille, block mosaic patterns, block diagonals, large type pieces, and some other Symbols for Legacy Computing
 - More Latin letters (Full Latin-1 Supplement, Latin Extended-A, Latin Extended-B, IPA Extensions, Latin Extended Additional, Latin Extended-C, and Phonetic Extensions blocks)
 - A growing set of emojis (785 so far)
 - Additional symbols and pictographs
 
-With 12244 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
+With 12282 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
