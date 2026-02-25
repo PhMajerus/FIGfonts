@@ -14,9 +14,9 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 
 | Font | Rows | Chars | Latin | International | More |
 |:-----|---:|---:|:-----:|:-----:|:-----:|
-|[phm-smallvt](#phm-smallvt)| 4 | 583 |Extra Latin and Greek| | |
+|[phm-smallvt](#phm-smallvt)| 4 | 583 |Some Latin and Greek| | |
 |[hp2640-largetype](#hp2640-largetype)| 3 | 103 | | | |
-|[phm-largetype](#phm-largetype)| 3 | 2570 |ISO 8859-1 + CP1252 + CP437|Japanese Katakana|✔|
+|[phm-largetype](#phm-largetype)| 3 | 2570 |ISO 8859-1 + CP1252|Japanese Katakana|CP437 + more|
 |[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 | | | |
 |[phm-minecraft](#phm-minecraft)| 2 | 220 | ISO 8859-1 + CP1252| | |
 |[phm-c64](#phm-c64)| 2 | 184 | | |PETSCII|
