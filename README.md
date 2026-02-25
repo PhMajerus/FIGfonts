@@ -201,7 +201,7 @@ _Remember to use `figlet -f phm-vga-square -C utf8` to access Unicode characters
 ## phm-hdos
 ![phm-hdos](images/phm-hdos.png)
 
-This font uses Unicode 16.0 octant characters to recreate the original Microsoft Korean/한글 MS-DOS character set.
+This font uses Unicode 16.0 octant characters to recreate the original Microsoft Hangeul / 한글 MS-DOS character set.
 This is the font used on Korean versions of MS-DOS which support modern Hangul / 한글.
 Just like phm-vga above is probably the font most people remember as the MS-DOS font, this is the one Korean users remember.
 The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels for full-width, rendered as 4×4 and 8×4 octants characters respectively. It uses four rows and supports what MS-DOS used to call code page 949, but which was really a subset of what would later be code page 51949, not the Windows CP949.
