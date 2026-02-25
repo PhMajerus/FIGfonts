@@ -12,30 +12,75 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 
 ## Fonts in this repository
 
-| Font | Rows | Chars | ASCII | ISO 8859‑1 Latin‑1 | CP 1252 Latin‑1 | CP 437 US‑English | JIS X 0208 Japanese | CP 932 Japanese Shift‑JIS | More |
-|:-----|---:|---:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|[phm-smallvt](#phm-smallvt)| 4 | 583 |✔︎| | |✔︎| | | |
-|[hp2640-largetype](#hp2640-largetype)| 3 | 103 |✔︎| | | | | | |
-|[phm-largetype](#phm-largetype)| 3 | 2570 |✔︎|✔︎|✔︎|✔︎|kana| |✔︎|
-|[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |✔︎| | | | | | |
-|[phm-minecraft](#phm-minecraft)| 2 | 220 |✔︎|✔︎|✔︎| | | | |
-|[phm-c64](#phm-c64)| 2 | 184 |✔︎| | | | | |PETSCII|
-|[phm-cga](#phm-cga)| 2 | 264 |✔︎| | |✔︎| | | |
-|[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |✔︎| | | |
-|[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |✔︎| | | |
-|[phm-hdos](#phm-hdos) | 4 | 2660 |✔︎| | |✔︎| | |Hangul|
-|[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| | | |✔︎|✔︎|✔︎| |
-|[phm-shinonome](#phm-shinonome)| 3 | 12347 |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
-|[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | | | | |
-|[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | | | | |
-|[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|✔︎|✔︎| | | | |
-|[phm-chisel](#phm-chisel)| 6 | 637 |✔︎|✔︎|✔︎| |kana| |✔︎|
-|[beyond-blue](#beyond-blue)| 9 | 102 |✔︎| | | | | | |
-|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3256 |✔︎|✔︎|✔︎|✔︎|partial| |✔︎|
+| Font | Rows | Chars | ASCII | Latin | International | More |
+|:-----|---:|---:|:-----:|:-----:|:-----:|:-----:|
+|[phm-smallvt](#phm-smallvt)| 4 | 583 |✔︎|Extra Latin and Greek| | |
+|[hp2640-largetype](#hp2640-largetype)| 3 | 103 |✔︎| | | |
+|[phm-largetype](#phm-largetype)| 3 | 2570 |✔︎|ISO 8859-1 + CP1252 + CP437|Japanese Katakana|✔|
+|[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |✔︎| | | |
+|[phm-minecraft](#phm-minecraft)| 2 | 220 |✔︎| ISO 8859-1 + CP1252| | |
+|[phm-c64](#phm-c64)| 2 | 184 |✔︎| | |PETSCII|
+|[phm-cga](#phm-cga)| 2 | 264 |✔︎| | |CP437|
+|[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |CP437|
+|[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |CP437|
+|[phm-hdos](#phm-hdos) | 4 | 2660 |✔︎| |Korean KS X 1001 Hangul|CP437|
+|[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| |Japanese CP932| |
+|[phm-shinonome](#phm-shinonome)| 3 | 12347 |✔︎|ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
+|[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | |
+|[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | |
+|[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|ISO 8859-1 + CP1252| | |
+|[phm-chisel](#phm-chisel)| 6 | 637 |✔︎|ISO 8859-1 + CP1252|Japanese Katakana|✔︎|
+|[beyond-blue](#beyond-blue)| 9 | 102 |✔︎| | | |
+|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3256 |✔︎|ISO 8859-1 + CP1252|Japanese Katakana + a few Kanji|CP437 + Some Emojis|
 
-Note fonts that support both CP1252 (Latin-1) and CP437 (US-English) also support CP850 (Multilingual Latin 1), CP858 (Multilingual Latin 1 + Euro), CP860 (Portuguese), CP861 (Icelandic), CP863 (Canadian French), and CP865 (Nordic).
+### Latin encodings
+Latin languages support can include
+- ASCII - the base 7-bit ASCII character set
+- CP437 - the original IBM PC and MS-DOS U.S. English character set, including ASCII, symbols, and semigraphics
+- ISO 8859-1 Latin-1 - the standard Latin-1 alphabet (Basic Latin + Latin-1 Supplement in Unicode)
+- CP1252 - the Windows extension to ISO 8859-1, adding some symbols and punctuation
+- Unicode - includes many more latin letters for other languages, font can implement Latin Extended-A/B/C/D/E, Additional, IPA Extensions, Phonetic Extensions
 
-### phm-smallvt
+Fonts that support both CP1252 (Latin‑1) and CP437 (US‑English) implicitly support the full printable repertoires of:
+- CP850 (Multilingual Latin 1)
+- CP858 (Multilingual Latin 1 + Euro sign)
+- CP860 (Portuguese)
+- CP861 (Icelandic)
+- CP863 (Canadian French)
+- CP865 (Nordic)
+These code pages are supersets or near‑supersets of CP437/CP1252, requiring no additional glyphs beyond those already present.
+Some font may include many more latin letters variations defined in Unicode to support more languages and phonetics.
+
+### Japanese encodings
+Japanese support exists in several increasing levels:
+- JIS X 0201 — 8‑bit extension of ASCII containing half‑width katakana (and a Roman set identical to ASCII).
+- JIS X 0208 — double‑byte set including Hiragana, Katakana, Greek, Cyrillic, 6355 Kanji, and many symbols.
+- CP932 (Shift‑JIS / DOS/V) — extends JIS X 0208 with NEC PC‑98 and IBM DOS/V extensions, adding 361 extra Kanji and additional symbols.
+- Unicode — includes tens of thousands of CJK ideographs, but fonts typically implement only the subset relevant to their intended use (e.g., Jōyō / Jinmeiyō coverage varies widely).
+
+Because of this, Japanese support in FIGfonts can be described as:
+- Katakana - JIS X 0201 kana, half‑width Katakana only
+- Kana - full‑width Hiragana/Katakana only, often along with half-width Katakana for backward compatibility
+- JIS X 0208 Kanji
+- CP932 Kanji - JIS X 0208 Kanji + NEC & IBM extensions
+- Jōyō Kanji and/or 常用漢字 2010 and Jinmeiyō kanji / 人名用漢字 - a few more than CP932 to support modern Japanese
+- Unicode Kanji - additional ideographs beyond CP932, depending on intended font use
+
+### Korean encodings
+Korean support typically falls into four categories:
+- Jamo — the 24 basic letters (choseong/jungseong/jongseong) used for algorithmic composition.
+- Modern Hangul syllables — the 2350 commonly used syllables defined in KS X 1001, historically used by Hangul MS‑DOS.
+- Full Hangul syllables — the complete 11172 algorithmically defined syllables in Unicode.
+- Hanja — the 1034 Hanja defined in KS X 1001, but many systems (including Korean MS‑DOS) did not include glyphs for them even though they were encodable.
+
+Because of this, Korean support in FIGfonts can be described as:
+- Jamo only
+- KS X 1001 Hangul (2350 modern syllables)
+- Full Hangul (all 11172 syllables)
+- Hanja subset
+
+
+## phm-smallvt
 ![phm-smallvt](images/phm-smallvt.png)
 
 This is my main ANSI/VT-based font, containing over 500 characters.
@@ -47,7 +92,7 @@ It does not work at all in TOIlet 0.3, as escape sequences get removed.
 _Remember to use `figlet -f phm-smallvt -C utf8 -w 9999` to access Unicode characters and to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
 
-### hp2640-largetype
+## hp2640-largetype
 ![hp2640-largetype](images/hp2640-largetype.png)
 
 This is a FIGlet version of the example Large Type Pieces (Unicode 16.0) ASCII font provided by Hewlett-Packard in their HP 2641A/2645A/2645S Display Station Reference Manual, Table B-16.
@@ -60,7 +105,7 @@ If you want to learn more about Large Type Pieces, try `curl https://raw.githubu
 This FIGfont requires the terminal to support Large Type Pieces characters to display properly, a font such as [Cascadia ≥2404.23](https://github.com/microsoft/cascadia-code), [Cozette ≥1.27.0](https://github.com/the-moonwitch/Cozette), or [Iosevka ≥29.0.0](https://github.com/be5invis/Iosevka) is recommended.
 
 
-### phm-largetype
+## phm-largetype
 ![phm-largetype](images/phm-largetype.png)
 
 This is my main Large Type Pieces (Unicode 16.0) font, containing 2570 characters covering ASCII, Latin-1, Latin Extended-A, Latin Extended-B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana (JIS X 0201), Braille, some mathematical operators and symbols, and more.
@@ -76,7 +121,7 @@ This FIGfont requires the terminal to support Large Type Pieces characters to di
 _Remember to use `figlet -f phm-largetype -C utf8` to access Unicode characters._
 
 
-### phm-largetype-ASCII
+## phm-largetype-ASCII
 ![phm-largetype-ASCII](images/phm-largetype-ASCII.png)
 
 This is a subset of my Large Type Pieces font, but instead of using Unicode 16.0 characters, it uses the legacy alternate character set
@@ -90,7 +135,7 @@ Note the character set must be selected and then restored when using this FIGfon
 `echo -ne "\e( L"; figlet -f phm-largetype-ASCII -C utf8 "Hello, world!"; echo -ne "\e(B"`
 
 
-### phm-lcdmatrix
+## phm-lcdmatrix
 ![phm-lcdmatrix](images/phm-lcdmatrix.png)
 
 This font uses Unicode 16.0 octants characters to create a monospaced retro low-rez font like on LCD and LED signboards, and 8-bit computers.
@@ -99,7 +144,7 @@ The characters are 6×8 pseudo-pixels, inspired by the Motorola MC6847 character
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 
-### phm-minecraft
+## phm-minecraft
 ![phm-minecraft](images/phm-minecraft.png)
 
 This font uses Unicode 16.0 octants characters to recreate the Minecraft font by Mojang Studios.
@@ -110,7 +155,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-minecraft -C utf8` to access Unicode characters._
 
 
-### phm-c64
+## phm-c64
 ![phm-c64](images/phm-c64.png)
 
 This font uses Unicode 16.0 octants characters to recreate the original Commodore 64 character set as a large font.
@@ -121,7 +166,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-c64 -C utf8` to access Unicode characters._
 
 
-### phm-cga
+## phm-cga
 ![phm-cga](images/phm-cga.png)
 
 This font uses Unicode 16.0 octants characters to recreate the original IBM CGA bold character set as a large font. It is one of the original font for the launch of the IBM PC.
@@ -132,7 +177,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-cga -C utf8` to access Unicode characters._
 
 
-### phm-vga
+## phm-vga
 ![phm-vga](images/phm-vga.png)
 
 This font uses Unicode 16.0 octants characters to recreate the original IBM VGA and MS-DOS CP437 character set for 80 columns × 25 lines mode as a large font. This is probably the font most people remember as the MS-DOS font.
@@ -142,7 +187,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 
 _Remember to use `figlet -f phm-vga -C utf8` to access Unicode characters._
 
-### phm-vga-square
+## phm-vga-square
 ![phm-vga-square](images/phm-vga-square.png)
 
 Similar to phm-vga above, but based on the 80 columns × 50 lines mode, which are square characters.
@@ -153,7 +198,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-vga-square -C utf8` to access Unicode characters._
 
 
-### phm-hdos
+## phm-hdos
 ![phm-hdos](images/phm-hdos.png)
 
 This font uses Unicode 16.0 octant characters to recreate the original Microsoft Korean/한글 MS-DOS character set.
@@ -170,7 +215,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-hdos -C utf8` to access Unicode characters._
 
 
-### phm-dosv
+## phm-dosv
 ![phm-dosv](images/phm-dosv.png)
 
 This font uses Unicode 16.0 octant characters to recreate the original Microsoft Japanese DOS/V character set.
@@ -187,7 +232,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
 
 
-### phm-shinonome
+## phm-shinonome
 ![phm-shinonome](images/phm-shinonome.png)
 
 phm‑shinonome uses Unicode 16.0 octant characters to display the monospace Shinonome12 / 東雲12 (Shinonome 12‑dot Gothic/sans‑serif) bitmap font, originally designed by Yasuyuki Furukawa / 古川 泰之様 and released into the public domain.
@@ -228,7 +273,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-shinonome -C utf8` to access Unicode characters._
 
 
-### phm-blocky
+## phm-blocky
 ![phm-blocky](images/phm-blocky.png)
 
 This font uses extended ASCII characters from the US (437) codepage and ANSI/VT escape sequences for inverted (negative) characters.
@@ -240,7 +285,7 @@ It does not work at all in TOIlet 0.3, as escape sequences get removed.
 _Remember to use `figlet -f phm-blocky -w 9999` to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
 
-### phm-blocky-reverse
+## phm-blocky-reverse
 ![phm-blocky-reverse](images/phm-blocky-reverse.png)
 
 This font uses extended ASCII characters from the US (437) codepage.
@@ -250,14 +295,14 @@ Unlike phm-blocky, this reverse version does not require an ANSI/VT terminal (do
 The equivalent font in non-reverse is not possible without help from ANSI/VT to invert (negative) some characters.
 
 
-### phm-rounded
+## phm-rounded
 ![phm-rounded](images/phm-rounded.png)
 
 This font uses Unicode characters (Box Drawings lines, half lines, diagonals and arcs).
 It uses four rows and supports the base ASCII characters set.
 
 
-### phm-slanted
+## phm-slanted
 ![phm-slanted](images/phm-slanted.png)
 
 This font uses Unicode 13.0 smooth mosaic and sextant characters.
@@ -266,7 +311,7 @@ It uses six rows and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 cha
 _Remember to use `figlet -f phm-slanted -C utf8` to access Unicode characters._
 
 
-### phm-chisel
+## phm-chisel
 ![phm-chisel](images/phm-chisel.png)
 
 This font uses Unicode 13.0 smooth mosaic and sextant characters, as well as some quadrants, and requires 16 colors ANSI/VT escape sequences support, and uses six rows.
@@ -305,7 +350,7 @@ _(Expand for commands to use for red, green, blue, yellow, purple, cyan, orange,
 _Remember to use `figlet -f phm-chisel -C utf8 -w 9999` to access Unicode characters and to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
 
-### beyond-blue
+## beyond-blue
 ![beyond-blue](images/beyond-blue.png)
 
 This font was designed by Strahd(ST) & Roy/SAC as `BEYONDX.TDF` for TheDRAW, an MS-DOS ANSI-art drawing application.
@@ -320,12 +365,12 @@ It does not work at all in TOIlet 0.3, as escape sequences get removed.
 _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
 
-### PHM Beyond Neo (FIGfont family)
+## PHM Beyond Neo (FIGfont family)
 
 This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3256 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 138 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 330 color symbols and emojis, and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
-#### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
+### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
 ![phm-beyondneo-colors](images/phm-beyondneo-colors.png)
 
 These are the red, green, blue, yellow, purple, cyan, orange, pink, silver, and gold color schemes of Beyond Neo.
@@ -342,7 +387,7 @@ figlet -f phm-beyondneo-gold -C utf8 -w 9999 "Test" | sed -e 's/38;5;59/38;5;16/
 
 _Remember to use `figlet -f phm-beyondneo-red -C utf8 -w 9999` to access Unicode characters (including ISO 8859-1) and to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
-#### phm-beyondneo-mono
+### phm-beyondneo-mono
 ![phm-beyondneo-mono](images/phm-beyondneo-mono.png)
 
 This is the monochrome version of Beyond Neo. it is designed without any ANSI/VT escape sequence, making it compatible with plain-text and VT-unaware utilities.
