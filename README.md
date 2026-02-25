@@ -69,7 +69,7 @@ Because of this, Japanese support in FIGfonts can be described as:
 ### Korean encodings
 Korean support typically falls into four categories:
 - Jamo — the 24 basic letters (choseong/jungseong/jongseong) used for algorithmic composition.
-- Modern Hangul syllables — the 2350 commonly used syllables defined in KS X 1001, historically used by Hangul MS‑DOS.
+- Modern Hangul syllables — the 2350 commonly used syllables defined in KS X 1001, historically used by Hangeul MS‑DOS.
 - Full Hangul syllables — the complete 11172 algorithmically defined syllables in Unicode.
 - Hanja — the 1034 Hanja defined in KS X 1001, but many systems (including Korean MS‑DOS) did not include glyphs for them even though they were encodable.
 
