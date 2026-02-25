@@ -12,26 +12,26 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 
 ## Fonts in this repository
 
-| Font | Rows | Chars | ASCII | Latin | International | More |
-|:-----|---:|---:|:-----:|:-----:|:-----:|:-----:|
-|[phm-smallvt](#phm-smallvt)| 4 | 583 |✔︎|Extra Latin and Greek| | |
-|[hp2640-largetype](#hp2640-largetype)| 3 | 103 |✔︎| | | |
-|[phm-largetype](#phm-largetype)| 3 | 2570 |✔︎|ISO 8859-1 + CP1252 + CP437|Japanese Katakana|✔|
-|[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |✔︎| | | |
-|[phm-minecraft](#phm-minecraft)| 2 | 220 |✔︎| ISO 8859-1 + CP1252| | |
-|[phm-c64](#phm-c64)| 2 | 184 |✔︎| | |PETSCII|
-|[phm-cga](#phm-cga)| 2 | 264 |✔︎| | |CP437|
-|[phm-vga](#phm-vga)| 4 | 264 |✔︎| | |CP437|
-|[phm-vga-square](#phm-vga-square)| 2 | 264 |✔︎| | |CP437|
-|[phm-hdos](#phm-hdos) | 4 | 2660 |✔︎| |Korean KS X 1001 Hangul|CP437|
-|[phm-dosv](#phm-dosv)| 4 | 7531 |✔︎| |Japanese CP932| |
-|[phm-shinonome](#phm-shinonome)| 3 | 12347 |✔︎|ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
-|[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |✔︎| | | |
-|[phm-rounded](#phm-rounded)| 4 | 103 |✔︎| | | |
-|[phm-slanted](#phm-slanted)| 6 | 255 |✔︎|ISO 8859-1 + CP1252| | |
-|[phm-chisel](#phm-chisel)| 6 | 637 |✔︎|ISO 8859-1 + CP1252|Japanese Katakana|✔︎|
-|[beyond-blue](#beyond-blue)| 9 | 102 |✔︎| | | |
-|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3256 |✔︎|ISO 8859-1 + CP1252|Japanese Katakana + a few Kanji|CP437 + Some Emojis|
+| Font | Rows | Chars | Latin | International | More |
+|:-----|---:|---:|:-----:|:-----:|:-----:|
+|[phm-smallvt](#phm-smallvt)| 4 | 583 |Extra Latin and Greek| | |
+|[hp2640-largetype](#hp2640-largetype)| 3 | 103 | | | |
+|[phm-largetype](#phm-largetype)| 3 | 2570 |ISO 8859-1 + CP1252 + CP437|Japanese Katakana|✔|
+|[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 | | | |
+|[phm-minecraft](#phm-minecraft)| 2 | 220 | ISO 8859-1 + CP1252| | |
+|[phm-c64](#phm-c64)| 2 | 184 | | |PETSCII|
+|[phm-cga](#phm-cga)| 2 | 264 | | |CP437|
+|[phm-vga](#phm-vga)| 4 | 264 | | |CP437|
+|[phm-vga-square](#phm-vga-square)| 2 | 264 | | |CP437|
+|[phm-hdos](#phm-hdos) | 4 | 2660 | |Korean KS X 1001 Hangul|CP437|
+|[phm-dosv](#phm-dosv)| 4 | 7531 | |Japanese CP932| |
+|[phm-shinonome](#phm-shinonome)| 3 | 12347 |ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
+|[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 | | | |
+|[phm-rounded](#phm-rounded)| 4 | 103 | | | |
+|[phm-slanted](#phm-slanted)| 6 | 255 |ISO 8859-1 + CP1252| | |
+|[phm-chisel](#phm-chisel)| 6 | 637 |ISO 8859-1 + CP1252|Japanese Katakana|✔︎|
+|[beyond-blue](#beyond-blue)| 9 | 102 | | | |
+|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3256 |ISO 8859-1 + CP1252|Japanese Katakana + a few Kanji|CP437 + Some Emojis|
 
 ### Latin encodings
 Latin languages support can include
