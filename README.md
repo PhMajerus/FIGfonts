@@ -31,7 +31,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-slanted](#phm-slanted)| 6 | 255 |ISO 8859-1 + CP1252| | |
 |[phm-chisel](#phm-chisel)| 6 | 637 |ISO 8859-1 + CP1252|Japanese Katakana|✔︎|
 |[beyond-blue](#beyond-blue)| 9 | 102 |ASCII| | |
-|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3256 |ISO 8859-1 + CP1252|Japanese Katakana + a few Kanji|CP437 + Some Emojis|
+|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3257 |ISO 8859-1 + CP1252|Japanese Katakana + a few Kanji|CP437 + Some Emojis|
 
 ### Latin encodings
 Latin languages support can include
@@ -367,7 +367,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ## PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3256 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 138 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 330 color symbols and emojis, and more.
+This font family is inspired by the look of ST+Roy/SAC Beyond, but using just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3257 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 139 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 330 color symbols and emojis, and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 ### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
