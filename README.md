@@ -23,6 +23,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-cga](#phm-cga)| 2 | 264 |ASCII| |CP437|
 |[phm-vga](#phm-vga)| 4 | 264 |ASCII| |CP437|
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |ASCII| |CP437|
+|[phm-dos](#phm-dos) | 4 | 313 |ISO 8859-1 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865|CP737 + CP869 (Greek) + CP855 + CP866 (Cyrillic)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
 |[phm-shinonome](#phm-shinonome)| 3 | 12362 |ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
@@ -37,7 +38,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 Latin languages support can include
 - ASCII - the base 7-bit ASCII character set
 - CP437 - the original IBM PC and MS-DOS U.S. English character set, including ASCII, symbols, and semigraphics
-- ISO 8859-1 Latin-1 - the standard Latin-1 alphabet (Basic Latin + Latin-1 Supplement in Unicode)
+- ISO 8859-1 Latin-1 - the standard Latin-1 alphabet (Basic Latin + Latin-1 Supplement Unicode blocks)
 - CP1252 - the Windows extension to ISO 8859-1, adding some symbols and punctuation
 - Unicode - includes many more latin letters for other languages, font can implement Latin Extended-A/B/C/D/E, Additional, IPA Extensions, Phonetic Extensions
 
@@ -180,8 +181,9 @@ _Remember to use `figlet -f phm-cga -C utf8` to access Unicode characters._
 ## phm-vga
 ![phm-vga](images/phm-vga.png)
 
-This font uses Unicode 16.0 octants characters to recreate the original IBM VGA and MS-DOS CP437 character set for 80 columns × 25 lines mode as a large font. This is probably the font most people remember as the MS-DOS font.
+This font uses Unicode 16.0 octants characters to recreate the original IBM VGA character set for 80 columns × 25 lines mode as a large font. 
 The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It uses four rows and supports codepage 437.
+For most uses, the [phm-dos](phm-dos) font is better, as it is almost identical but supports many more codepages and is based on the MS-DOS CPI software fonts.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -198,12 +200,41 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 _Remember to use `figlet -f phm-vga-square -C utf8` to access Unicode characters._
 
 
+## phm-dos
+![phm-dos](images/phm-dos.png)
+
+This font uses Unicode 16.0 octant characters to recreate the original international Microsoft MS-DOS character sets.
+This is probably the font most people remember as the MS-DOS-era font.
+The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It uses four rows and supports most MS-DOS codepages:
+- 437 (OEM - United States)
+- 737 (OEM - Greek 437G) - work in progress
+- 850 (OEM - Multilingual Latin I) and ISO 8859-1 (Latin 1)
+- 852 (OEM - Latin II) - work in progress
+- 855 (OEM - Cyrillic) - work in progress
+- 857 (OEM - Turkish) - work in progress
+- 858 (OEM - Multilingual Latin I + Euro)
+- 860 (OEM - Portuguese)
+- 861 (OEM - Icelandic)
+- 863 (OEM - Canadian French)
+- 865 (OEM - Nordic)
+- 866 (OEM - Russian) - work in progress
+- 869 (OEM - Modern Greek) - work in progress
+
+Some character sets provided by MS-DOS `EGA*.CPI` contained different designs for the same Unicode character.
+This FIGfont unifies them to be as consistent as possible when used for mixed languages text.
+Korean and Japanese versions of MS-DOS contained completely different character sets - see the separate [phm-hdos](phm-hdos) and [phm-dosv](phm-dosv) below.
+
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
+
+_Remember to use `figlet -f phm-dos -C utf8` to access Unicode characters._
+
+
 ## phm-hdos
 ![phm-hdos](images/phm-hdos.png)
 
 This font uses Unicode 16.0 octant characters to recreate the original Microsoft Hangeul / 한글 MS-DOS character set.
 This is the font used on Korean versions of MS-DOS which support modern Hangul / 한글.
-Just like phm-vga above is probably the font most people remember as the MS-DOS font, this is the one Korean users remember.
+Just like phm-dos above is probably the font most people remember as the MS-DOS-era font, this is the one Korean users remember.
 The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels for full-width, rendered as 4×4 and 8×4 octants characters respectively. It uses four rows and supports what MS-DOS used to call code page 949, but which was really a subset of what would later be code page 51949, not the Windows CP949.
 Note Korean/한글 MS-DOS did not support the full KS X 1001 standard with special characters, Greek, Hiragana, Katakana, Cyrillic, and Hanja.
 
@@ -220,7 +251,7 @@ _Remember to use `figlet -f phm-hdos -C utf8` to access Unicode characters._
 
 This font uses Unicode 16.0 octant characters to recreate the original Microsoft Japanese DOS/V character set.
 This is the font used on Japanese versions of IBM PC-DOS and MS-DOS with support for code page 932 (Shift-JIS).
-Just like phm-vga above is probably the font most people remember as the MS-DOS font, this is the one Japanese users remember.
+Just like phm-dos above is probably the font most people remember as the MS-DOS-era font, this is the one Japanese users remember.
 The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels for full-width, rendered as 4×4 and 8×4 octants characters respectively. It uses four rows and supports codepage 932.
 
 For people not familiar with DOS/V, it contained a special text-mode display driver as well as a software font to be able to render multi-byte character sets (MBCS) such as CP932. This made it possible to support thousands of ideographs (kanji) required by JIS X 0208.
