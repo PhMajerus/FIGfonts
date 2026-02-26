@@ -223,7 +223,7 @@ The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It 
 
 Some character sets provided by MS-DOS `EGA*.CPI` contained different designs for the same Unicode character.
 This FIGfont unifies them to be as consistent as possible when used for mixed languages text.
-Korean and Japanese versions of MS-DOS contained completely different character sets - see the separate [phm-hdos (based on Hangeul / 한글 MS-DOS)](#phm-hdos) and [#phm-dosv (based on Japanese MS-DOS/V)](#phm-dosv) below.
+Korean and Japanese versions of MS-DOS contained completely different character sets - see the separate [phm-hdos (based on Hangeul / 한글 MS-DOS)](#phm-hdos) and [phm-dosv (based on Japanese MS-DOS/V)](#phm-dosv) below.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
