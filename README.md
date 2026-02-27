@@ -23,7 +23,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-cga](#phm-cga)| 2 | 264 |ASCII| |CP437|
 |[phm-vga](#phm-vga)| 4 | 264 |ASCII| |CP437|
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |ASCII| |CP437|
-|[phm-dos](#phm-dos) | 4 | 313 |ISO 8859-1 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865|CP737 + CP869 (Greek) + CP855 + CP866 (Cyrillic)|CP437|
+|[phm-dos](#phm-dos) | 4 | 432 |ISO 8859-1 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865|CP737 + CP869 (Greek) + CP855 + CP866 (Cyrillic)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
 |[phm-shinonome](#phm-shinonome)| 3 | 12362 |ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
@@ -208,18 +208,18 @@ This font uses Unicode 16.0 octant characters to recreate the original internati
 This is probably the font most people remember as the MS-DOS-era font.
 The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It uses four rows and supports most MS-DOS codepages:
 - 437 (OEM - United States)
-- 737 (OEM - Greek 437G) - work in progress
+- 737 (OEM - Greek 437G)
 - 850 (OEM - Multilingual Latin I) and ISO 8859-1 (Latin 1)
 - 852 (OEM - Latin II) - work in progress
 - 855 (OEM - Cyrillic) - work in progress
-- 857 (OEM - Turkish) - work in progress
+- 857 (OEM - Turkish)
 - 858 (OEM - Multilingual Latin I + Euro)
 - 860 (OEM - Portuguese)
 - 861 (OEM - Icelandic)
 - 863 (OEM - Canadian French)
 - 865 (OEM - Nordic)
 - 866 (OEM - Russian) - work in progress
-- 869 (OEM - Modern Greek) - work in progress
+- 869 (OEM - Modern Greek)
 
 Some character sets provided by MS-DOS `EGA*.CPI` contained different designs for the same Unicode character.
 This FIGfont unifies them to be as consistent as possible when used for mixed languages text.
