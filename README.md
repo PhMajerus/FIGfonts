@@ -23,7 +23,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-cga](#phm-cga)| 2 | 264 |ASCII| |CP437|
 |[phm-vga](#phm-vga)| 4 | 264 |ASCII| |CP437|
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |ASCII| |CP437|
-|[phm-dos](#phm-dos) | 4 | 432 |ISO 8859-1 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865|CP737 + CP869 (Greek) + CP855 + CP866 (Cyrillic)|CP437|
+|[phm-dos](#phm-dos) | 4 | 488 |ISO 8859-1 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865|CP737 + CP869 (Greek) + CP855 + CP866 (Cyrillic)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
 |[phm-shinonome](#phm-shinonome)| 3 | 12362 |ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
@@ -210,7 +210,7 @@ The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It 
 - 437 (OEM - United States)
 - 737 (OEM - Greek 437G)
 - 850 (OEM - Multilingual Latin I) and ISO 8859-1 (Latin 1)
-- 852 (OEM - Latin II) - work in progress
+- 852 (OEM - Latin II)
 - 855 (OEM - Cyrillic) - work in progress
 - 857 (OEM - Turkish)
 - 858 (OEM - Multilingual Latin I + Euro)
@@ -221,8 +221,7 @@ The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It 
 - 866 (OEM - Russian) - work in progress
 - 869 (OEM - Modern Greek)
 
-Some character sets provided by MS-DOS `EGA*.CPI` contained different designs for the same Unicode character.
-This FIGfont unifies them to be as consistent as possible when used for mixed languages text.
+Some character sets provided by MS-DOS `EGA*.CPI` contained different designs for the same Unicode character. This FIGfont unifies them to be as consistent as possible when used for mixed languages text.
 Korean and Japanese versions of MS-DOS contained completely different character sets - see the separate [phm-hdos (based on Hangeul / 한글 MS-DOS)](#phm-hdos) and [phm-dosv (based on Japanese MS-DOS/V)](#phm-dosv) below.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
