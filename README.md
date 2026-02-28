@@ -139,7 +139,7 @@ Note the character set must be selected and then restored when using this FIGfon
 ## phm-lcdmatrix
 ![phm-lcdmatrix](images/phm-lcdmatrix.png)
 
-This font uses Unicode 16.0 octants characters to create a monospaced retro low-rez font like on LCD and LED signboards, and 8-bit computers.
+This font uses Unicode 16.0 octant characters to create a monospaced retro low-rez font like on LCD and LED signboards, and 8-bit computers.
 The characters are 6×8 pseudo-pixels, inspired by the Motorola MC6847 character generator, Tatung Einstein TC-01, TRS-80, and other computers of the 1980's.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
@@ -148,7 +148,7 @@ It does not require an ANSI/VT terminal (does not use escape sequences) and work
 ## phm-minecraft
 ![phm-minecraft](images/phm-minecraft.png)
 
-This font uses Unicode 16.0 octants characters to recreate the Minecraft font by Mojang Studios.
+This font uses Unicode 16.0 octant characters to recreate the Minecraft font by Mojang Studios.
 It uses two rows and supports the Latin-1 characters (ISO 8859-1 and Windows codepage 1252).
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
@@ -159,8 +159,8 @@ _Remember to use `figlet -f phm-minecraft -C utf8` to access Unicode characters.
 ## phm-c64
 ![phm-c64](images/phm-c64.png)
 
-This font uses Unicode 16.0 octants characters to recreate the original Commodore 64 character set as a large font.
-The characters are 8×8 pseudo-pixels, rendered as 4×2 octants characters. It uses two rows and only includes characters originally found in the Commodore 64 chargen ROM. This means a few ASCII characters are missing, as PETSCII was based on an early version of ASCII.
+This font uses Unicode 16.0 octant characters to recreate the original Commodore 64 character set as a large font.
+The characters are 8×8 pseudo-pixels, rendered as 4×2 octant characters. It uses two rows and only includes characters originally found in the Commodore 64 chargen ROM. This means a few ASCII characters are missing, as PETSCII was based on an early version of ASCII.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -170,8 +170,8 @@ _Remember to use `figlet -f phm-c64 -C utf8` to access Unicode characters._
 ## phm-cga
 ![phm-cga](images/phm-cga.png)
 
-This font uses Unicode 16.0 octants characters to recreate the original IBM CGA bold character set as a large font. It is one of the original font for the launch of the IBM PC.
-The characters are 8×8 pseudo-pixels, rendered as 4×2 octants characters. It uses two rows and supports codepage 437.
+This font uses Unicode 16.0 octant characters to recreate the original IBM CGA bold character set as a large font. It is one of the original font for the launch of the IBM PC.
+The characters are 8×8 pseudo-pixels, rendered as 4×2 octant characters. It uses two rows and supports codepage 437.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -181,8 +181,8 @@ _Remember to use `figlet -f phm-cga -C utf8` to access Unicode characters._
 ## phm-vga
 ![phm-vga](images/phm-vga.png)
 
-This font uses Unicode 16.0 octants characters to recreate the original IBM VGA character set for 80 columns × 25 lines mode as a large font. 
-The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It uses four rows and supports codepage 437.
+This font uses Unicode 16.0 octant characters to recreate the original IBM VGA character set for 80 columns × 25 lines mode as a large font. 
+The characters are 8×16 pseudo-pixels, rendered as 4×4 octant characters. It uses four rows and supports codepage 437.
 For most uses, the [phm-dos](#phm-dos) font is better, as it is almost identical but supports many more codepages and is based on the MS-DOS CPI software fonts.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
@@ -194,7 +194,7 @@ _Remember to use `figlet -f phm-vga -C utf8` to access Unicode characters._
 ![phm-vga-square](images/phm-vga-square.png)
 
 Similar to phm-vga above, but based on the 80 columns × 50 lines mode, which are square characters.
-The characters are 8×8 pseudo-pixels, rendered as 4×2 octants characters. It uses two rows and supports codepage 437.
+The characters are 8×8 pseudo-pixels, rendered as 4×2 octant characters. It uses two rows and supports codepage 437.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -206,7 +206,7 @@ _Remember to use `figlet -f phm-vga-square -C utf8` to access Unicode characters
 
 This font uses Unicode 16.0 octant characters to recreate the original international Microsoft MS-DOS character sets.
 This is probably the font most people remember as the MS-DOS-era font.
-The characters are 8×16 pseudo-pixels, rendered as 4×4 octants characters. It uses four rows and supports most MS-DOS codepages:
+The characters are 8×16 pseudo-pixels, rendered as 4×4 octant characters. It uses four rows and supports most MS-DOS codepages:
 - 437 (OEM - United States)
 - 737 (OEM - Greek 437G)
 - 775 (OEM - Baltic) - not supported by MS-DOS
@@ -244,7 +244,7 @@ _Remember to use `figlet -f phm-dos -C utf8` to access Unicode characters._
 This font uses Unicode 16.0 octant characters to recreate the original Microsoft Hangeul / 한글 MS-DOS character set.
 This is the font used on Korean versions of MS-DOS which support modern Hangul / 한글.
 Just like [phm-dos](#phm-dos) above is probably the font most people remember as the MS-DOS-era font, this is the one Korean users remember.
-The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels for full-width, rendered as 4×4 and 8×4 octants characters respectively. It uses four rows and supports what MS-DOS used to call code page 949, but which was really a subset of what would later be code page 51949, not the Windows CP949.
+The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels for full-width, rendered as 4×4 and 8×4 octant characters respectively. It uses four rows and supports what MS-DOS used to call code page 949, but which was really a subset of what would later be code page 51949, not the Windows CP949.
 Note Korean/한글 MS-DOS did not support the full KS X 1001 standard with special characters, Greek, Hiragana, Katakana, Cyrillic, and Hanja.
 
 For people not familiar with Korean/한글 MS-DOS, it contained a text-mode display driver that could render Jamo and Hangul along with the standard U.S. English CP437. This font is based on the original glyphs generated by `HFONT.SYS`.
@@ -261,7 +261,7 @@ _Remember to use `figlet -f phm-hdos -C utf8` to access Unicode characters._
 This font uses Unicode 16.0 octant characters to recreate the original Microsoft Japanese DOS/V character set.
 This is the font used on Japanese versions of IBM PC-DOS and MS-DOS with support for code page 932 (Shift-JIS).
 Just like [phm-dos](#phm-dos) above is probably the font most people remember as the MS-DOS-era font, this is the one Japanese users remember.
-The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels for full-width, rendered as 4×4 and 8×4 octants characters respectively. It uses four rows and supports codepage 932.
+The characters are 8×16 pseudo-pixels for half-width and 16×16 pseudo-pixels for full-width, rendered as 4×4 and 8×4 octant characters respectively. It uses four rows and supports codepage 932.
 
 For people not familiar with DOS/V, it contained a special text-mode display driver as well as a software font to be able to render multi-byte character sets (MBCS) such as CP932. This made it possible to support thousands of ideographs (kanji) required by JIS X 0208.
 This font is based on the original glyphs from `ANK16.FNT` and `KANJI16.FNT`, which together make the Japanese software font from MS-DOS 6.2/V, and contains all of the characters supported by CP932.
