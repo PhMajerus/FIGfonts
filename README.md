@@ -23,7 +23,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-cga](#phm-cga)| 2 | 264 |ASCII| |CP437|
 |[phm-vga](#phm-vga)| 4 | 264 |ASCII| |CP437|
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |ASCII| |CP437|
-|[phm-dos](#phm-dos) | 4 | 601 |ISO 8859-1 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865 + CP1250 + CP1252 + CP1254|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437|
+|[phm-dos](#phm-dos) | 4 | 627 |ISO 8859-1 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865 + CP1250 + CP1252 + CP1254 + CP1257|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
 |[phm-shinonome](#phm-shinonome)| 3 | 12362 |ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
@@ -227,6 +227,7 @@ And the following that do not exist in MS-DOS, but improve Windows compatibility
 - 1252 (ANSI - Latin I)
 - 1253 (ANSI - Greek)
 - 1254 (ANSI - Turkish)
+- 1257 (ANSI - Baltic)
 
 Some character sets provided by MS-DOS `EGA*.CPI` contained different designs for the same Unicode character. This FIGfont unifies them to be as consistent as possible when used for mixed languages text.
 Korean and Japanese versions of MS-DOS contained completely different character sets - see the separate [phm-hdos (based on Hangeul / 한글 MS-DOS)](#phm-hdos) and [phm-dosv (based on Japanese MS-DOS/V)](#phm-dosv) below.
