@@ -26,7 +26,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-dos](#phm-dos) | 4 | 627 |ISO 8859-1 + CP775 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865 + CP1250 + CP1252 + CP1254 + CP1257|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
-|[phm-shinonome](#phm-shinonome)| 3 | 12557 |ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
+|[phm-shinonome](#phm-shinonome)| 3 | 12626 |ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |ASCII| | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |ASCII| | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |ISO 8859-1 + CP1252| | |
@@ -291,7 +291,7 @@ This guarantees that scripts and utilities outputs can be safely "upscaled" into
 - Jinmeiyō kanji / 人名用漢字 (37 additional ideographs to support all 863)
 - Jōyō kanji / 常用漢字 2010 (4 additional ideographs to support all 2136)
 - Full CP932 parity (MS-DOS/Windows Japanese Shift‑JIS)
-- MS Gothic / ＭＳ ゴシック 2.0 parity (except for non-Japanese ideographs), ensuring compatibility with Japanese Windows console (Windows 2000 → XP), and most of current 5.32 characters (Windows Vista → 11, only missing some arrows and symbols)
+- MS Gothic / ＭＳ ゴシック 5.32 parity (except for non-Japanese ideographs), ensuring compatibility with Japanese Windows console (Windows 2000 → 11)
 
 **Western and legacy compatibility**
 - MS‑DOS CP437 (IBM PC / en‑US) and CP850 (Latin 1)
@@ -306,7 +306,7 @@ This guarantees that scripts and utilities outputs can be safely "upscaled" into
 - A growing set of emojis (803 so far)
 - Additional symbols and pictographs
 
-With 12557 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
+With 12626 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
