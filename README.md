@@ -23,10 +23,10 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-cga](#phm-cga)| 2 | 264 |ASCII| |CP437|
 |[phm-vga](#phm-vga)| 4 | 264 |ASCII| |CP437|
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |ASCII| |CP437|
-|[phm-dos](#phm-dos) | 4 | 627 |ISO 8859-1 + CP775 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865 + CP1250 + CP1252 + CP1254 + CP1257|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437|
+|[phm-dos](#phm-dos) | 4 | 627 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
-|[phm-shinonome](#phm-shinonome)| 3 | 12626 |ISO 8859-1 + CP1252 + more|Japanese CP932 + Jōyō + Jinmeiyō|Many Emojis|CP437|
+|[phm-shinonome](#phm-shinonome)| 3 | 12626 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|Many Emojis|CP437|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |ASCII| | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |ASCII| | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |ISO 8859-1 + CP1252| | |
@@ -51,6 +51,8 @@ Fonts that support both CP1252 (Latin‑1) and CP437 (US‑English) implicitly s
 - CP865 (Nordic)
 These code pages are supersets or near‑supersets of CP437/CP1252, requiring no additional glyphs beyond those already present.
 Some font may include many more latin letters variations defined in Unicode to support more languages and phonetics.
+
+Fonts that mention support for all latin-based codepages support CP775 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865 + CP1250 + CP1252 + CP1254 + CP1257.
 
 ### Japanese encodings
 Japanese support exists in several increasing levels:
@@ -296,7 +298,7 @@ This guarantees that scripts and utilities outputs can be safely "upscaled" into
 **Western and legacy compatibility**
 - MS‑DOS CP437 (IBM PC / en‑US) and CP850 (Latin 1)
 - ISO 8859‑1 and Windows CP1252 (Latin 1)
-- Symbols and characters historically present in MS Gothic (Windows 3.1 → XP), including Greek and Cyrillic
+- Symbols and characters historically present in MS Gothic (Windows 3.1 → 11), including Greek and Cyrillic
 - Lucida Console 5.01 parity, ensuring compatibility with Western Windows console (Windows NT4 → Vista)
 - Cascadia 2407.24 parity, ensuring compatibility with Windows Terminal and Visual Studio (Windows 10 → 11)
 
@@ -479,7 +481,7 @@ Sequences with multiple combining marks may remain decomposed, and FIGlet cannot
 
 ---
 
--- Philippe Majerus, October 2024 to February 2026
+-- Philippe Majerus, October 2024 to March 2026
 
 ---
 
