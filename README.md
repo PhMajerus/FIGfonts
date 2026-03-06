@@ -23,8 +23,8 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-cga](#phm-cga)| 2 | 264 |ASCII| |CP437|
 |[phm-vga](#phm-vga)| 4 | 264 |ASCII| |CP437|
 |[phm-vga-square](#phm-vga-square)| 2 | 264 |ASCII| |CP437|
-|[phm-dos](#phm-dos) | 4 | 627 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437|
-|[phm-dos-square](#phm-dos-square) | 2 | 627 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437|
+|[phm-dos](#phm-dos) | 4 | 659 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic) + CP862 (Hebrew)|CP437|
+|[phm-dos-square](#phm-dos-square) | 2 | 659 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic) + CP862 (Hebrew)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
 |[phm-shinonome](#phm-shinonome)| 3 | 12626 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|Many Emojis|CP437|
@@ -220,6 +220,7 @@ The characters are 8×16 pseudo-pixels, rendered as 4×4 octant characters. It u
 - 858 (OEM - Multilingual Latin I + Euro)
 - 860 (OEM - Portuguese)
 - 861 (OEM - Icelandic)
+- 862 (OEM - Hebrew) - from _Hebrew Support for MS-DOS version 1.0_
 - 863 (OEM - Canadian French)
 - 865 (OEM - Nordic)
 - 866 (OEM - Russian)
@@ -234,6 +235,14 @@ And the following that do not exist in MS-DOS, but improve Windows compatibility
 - 1257 (ANSI - Baltic)
 
 Some character sets provided by MS-DOS `EGA*.CPI` contained different designs for the same Unicode character. This FIGfont unifies them to be as consistent as possible when used for mixed languages text.
+
+Hebrew (codepage 862) requires reversing the direction to right-to-left (RTL).
+As this font contains several codepages and supports mixing them, it does not enforce RTL. Use the `-R` option explicitely if you desire RTL mode, or reverse the Hebrew segments of the string in advance.
+Windows codepage 1255 (ANSI - Hebrew) cannot be fully supported in FIGlet because it contains combining marks and LRM/RLM directional marks.
+
+Arabic support in MS-DOS (codepage 720) was provided using similar technology as the Hebrew support by the _MS-DOS Arabic Support Version 1.0_.
+Unfortunately, it used overhanging glyphs (extending outside their cells) to overlay combining marks. This makes it impossible to properly support it in FIGlet, and is therefore not included in this font.
+
 Korean and Japanese versions of MS-DOS contained completely different character sets - see the separate [phm-hdos (based on Hangeul / 한글 MS-DOS)](#phm-hdos) and [phm-dosv (based on Japanese MS-DOS/V)](#phm-dosv) below.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
