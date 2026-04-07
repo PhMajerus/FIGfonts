@@ -298,10 +298,9 @@ _Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
 ## phm-shinonome
 ![phm-shinonome](images/phm-shinonome.png)
 
-phm‑shinonome uses Unicode 16.0 octant characters to display the monospace Shinonome12 / 東雲12 (Shinonome 12‑dot Gothic/sans‑serif) bitmap font, originally designed by Yasuyuki Furukawa / 古川 泰之様 and released into the public domain.
-Shinonome was widely used on early Japanese Unix X11 environments (FreeBSD, Linux).
+phm‑shinonome uses Unicode 16.0 octant characters to display the monospace Shinonome12 / 東雲12 (Shinonome 12‑dot Gothic/sans‑serif) bitmap font, originally designed by Yasuyuki Furukawa / 古川 泰之様 and released into the public domain, and widely used on early Japanese Unix X11 environments (FreeBSD, Linux).
 This FIGfont preserves its look while expanding it into a fully modern, compatibility‑complete design.
-Unlike many large font collections, that expansion of phm-shinonome is not aggregated or converted from other existing fonts, I designed each one of them to fit the shinonome design language.
+Unlike many large font collections, the expanded repertoire of phm-shinonome is not aggregated or converted from other fonts - every added glyph is my own design in the Shinonome style.
 
 It uses three rows of characters built from 6×12 pseudo‑pixels for half‑width and 12×12 pseudo‑pixels for full‑width, rendered as 3×3 and 6×3 octant matrices.
 
@@ -432,7 +431,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ## PHM Beyond Neo (FIGfont family)
 
-This font family is inspired by the look of ST+Roy/SAC Beyond, but besides the aesthetic inspiration, is a completely original work based on hundreds of colorful ANSI-art glyphs.
+This font takes visual cues from ST+Roy/SAC Beyond, but besides the aesthetic inspiration, is a completely original work built from my own set of hundreds of colorful ANSI‑art glyphs.
 It uses just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3262 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 143 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 331 color symbols and emojis, and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
