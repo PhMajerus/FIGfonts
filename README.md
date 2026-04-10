@@ -239,7 +239,7 @@ And the following that do not exist in MS-DOS, but improve Windows compatibility
 Some character sets provided by MS-DOS `EGA*.CPI` contained different designs for the same Unicode character. This FIGfont unifies them to be as consistent as possible when used for mixed languages text.
 
 Hebrew (codepage 862) requires reversing the direction to right-to-left (RTL).
-As this font contains several codepages and supports mixing them, it does not enforce RTL. Use the `-R` option explicitely if you desire RTL mode, or reverse the Hebrew segments of the string in advance.
+As this font contains several codepages and supports mixing them, it does not enforce RTL. Use the `-R` option explicitly if you desire RTL mode, or reverse the Hebrew segments of the string in advance.
 Windows codepage 1255 (ANSI - Hebrew) cannot be fully supported in FIGlet because it contains combining marks and LRM/RLM directional marks.
 
 Arabic support in MS-DOS (codepage 720) was provided using similar technology as the Hebrew support by the _MS-DOS Arabic Support Version 1.0_.
@@ -343,7 +343,7 @@ _Remember to use `figlet -f phm-shinonome -C utf8` to access Unicode characters.
 ![phm-blocky](images/phm-blocky.png)
 
 This font uses extended ASCII characters from the US (437) codepage and ANSI/VT escape sequences for inverted (negative) characters.
-It uses just two rows and supports the base ASCII characters set.
+It uses just two rows and supports the base ASCII character set.
 
 It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
 It does not work at all in TOIlet 0.3, as escape sequences get removed.
@@ -355,7 +355,7 @@ _Remember to use `figlet -f phm-blocky -w 9999` to avoid misplaced line breaks a
 ![phm-blocky-reverse](images/phm-blocky-reverse.png)
 
 This font uses extended ASCII characters from the US (437) codepage.
-It uses four rows and supports the base ASCII characters set.
+It uses four rows and supports the base ASCII character set.
 
 Unlike phm-blocky, this reverse version does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the block elements found in codepage 473.
 The equivalent font in non-reverse is not possible without help from ANSI/VT to invert (negative) some characters.
@@ -365,7 +365,7 @@ The equivalent font in non-reverse is not possible without help from ANSI/VT to 
 ![phm-rounded](images/phm-rounded.png)
 
 This font uses Unicode characters (Box Drawings lines, half lines, diagonals and arcs).
-It uses four rows and supports the base ASCII characters set.
+It uses four rows and supports the base ASCII character set.
 
 
 ## phm-slanted
@@ -381,7 +381,7 @@ _Remember to use `figlet -f phm-slanted -C utf8` to access Unicode characters._
 ![phm-chisel](images/phm-chisel.png)
 
 This font uses Unicode 13.0 smooth mosaic and sextant characters, as well as some quadrants, and requires 16 colors ANSI/VT escape sequences support, and uses six rows.
-It contains 637 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, and Japanese Katakana (and Hiragana as Katakana).
+It contains 637 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 character sets, and Japanese Katakana (and Hiragana as Katakana).
 
 It works in FIGlet 2.2.5, but the width computation gets confused, so it can only be used for single lines. It requires `-w 9999` to avoid misplaced line breaks.
 It does not work at all in TOIlet 0.3, as escape sequences get removed.
@@ -434,7 +434,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 ## PHM Beyond Neo (FIGfont family)
 
 This font takes visual cues from ST+Roy/SAC Beyond, but besides the aesthetic inspiration, is a completely original work built from my own set of hundreds of colorful ANSI‑art glyphs.
-It uses just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3262 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 characters sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 143 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 331 color symbols and emojis, and more.
+It uses just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3262 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 character sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 143 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 331 color symbols and emojis, and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 ### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange, -pink, -silver, -gold
@@ -509,7 +509,7 @@ echo "tiếng Việt" | uconv -x '::NFC;' | figlet -f phm-shinonome -C utf8
 Note that normalization only composes characters when a precomposed form actually exists in Unicode.
 Sequences with multiple combining marks may remain decomposed, and FIGlet cannot render them because it treats each combining mark as an independent, unsupported character.
 
-### Legacy encodings
+### Transcoding legacy encodings
 These FIGlet fonts are all using the Unicode encoding, which means you should use the `-C utf8` option to process the input as UTF-8 and access the full Unicode range of characters.
 When this document refers to legacy code pages, it means the font includes the characters corresponding to that code page's repertoire. It does not mean the font implements the legacy byte encoding.
 When handling inputs in legacy code pages, you should first convert them to UTF-8, for example by using the `iconv` utility, such as `cat 'MS-DOS CP437 doc.txt' | iconv -f CP437 -t UTF-8 | figlet -f phm-shinonome -C utf8` for an MS-DOS code page 437 (IBM PC) input, or `cat 'DOS/V CP932 doc.txt' | iconv -f CP932 -t UTF-8 | figlet -f phm-shinonome -C utf8` for a DOS/V code page 932 (Shift-JIS) input.
