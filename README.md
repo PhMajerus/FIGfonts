@@ -27,7 +27,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-dos-square](#phm-dos-square) | 2 | 659 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic) + CP862 (Hebrew)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
-|[phm-shinonome](#phm-shinonome)| 3 | 13205 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|Many Emojis|CP437|
+|[phm-shinonome](#phm-shinonome)| 3 | 13205 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|Many emojis|CP437|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |ASCII| | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |ASCII| | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |ISO 8859-1 + CP1252| | |
@@ -53,7 +53,7 @@ Fonts that support both CP1252 (Latin‑1) and CP437 (US‑English) implicitly s
 - CP863 (Canadian French)
 - CP865 (Nordic)
 These code pages are supersets or near‑supersets of CP437/CP1252, requiring no additional glyphs beyond those already present.
-Some font may include many more latin letters variations defined in Unicode to support more languages and phonetics.
+Some fonts may include many more latin letters variations defined in Unicode to support more languages and phonetics.
 
 Fonts that mention support for all latin-based codepages support CP775 + CP850 + CP852 + CP857 + CP858 + CP860 + CP861 + CP863 + CP865 + CP1250 + CP1252 + CP1254 + CP1257.
 
@@ -307,7 +307,7 @@ Unlike many large font collections, the expanded repertoire of phm-shinonome is 
 It uses three rows of characters built from 6×12 pseudo‑pixels for half‑width and 12×12 pseudo‑pixels for full‑width, rendered as 3×3 and 6×3 octant matrices.
 
 Because a FIGfont is never a primary text font but a title‑sized companion to the user’s terminal or editor font, phm‑shinonome is designed for full parity with modern terminal and editor coverage.
-Any text that renders correctly in the terminal should also render correctly when piped through figlet using this font, without missing glyphs placeholders (tofu).
+Any text that renders correctly in the terminal should also render correctly when piped through figlet using this font, without missing-glyph placeholders (tofu).
 This guarantees that scripts and utilities outputs can be safely "upscaled" into large ASCII‑art titles.
 
 **Japanese compatibility**
