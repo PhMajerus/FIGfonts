@@ -27,7 +27,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-dos-square](#phm-dos-square) | 2 | 659 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic) + CP862 (Hebrew)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
-|[phm-shinonome](#phm-shinonome)| 3 | 13205 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|Many emojis|CP437|
+|[phm-shinonome](#phm-shinonome)| 3 | 13227 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|Many emojis|CP437|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |ASCII| | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |ASCII| | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |ISO 8859-1 + CP1252| | |
@@ -329,10 +329,10 @@ This guarantees that scripts and utilities outputs can be safely "upscaled" into
 **Modern additions**
 - Braille, block mosaic patterns, block diagonals, large type pieces, and some other Symbols for Legacy Computing
 - More Latin letters (Full Latin-1 Supplement, Latin Extended-A, Latin Extended-B, IPA Extensions, Phonetic Extensions, Latin Extended Additional, and Latin Extended-C blocks)
-- A growing set of emojis (1147 so far)
+- A growing set of emojis (1150 so far)
 - Additional symbols and pictographs
 
-With 13205 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
+With 13227 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -509,7 +509,7 @@ echo "tiếng Việt" | uconv -x '::NFC;' | figlet -f phm-shinonome -C utf8
 Note that normalization only composes characters when a precomposed form actually exists in Unicode.
 Sequences with multiple combining marks may remain decomposed, and FIGlet cannot render them because it treats each combining mark as an independent, unsupported character.
 
-### Transcoding legacy encodings
+### Transcoding legacy text encodings
 These FIGlet fonts are all using the Unicode encoding, which means you should use the `-C utf8` option to process the input as UTF-8 and access the full Unicode range of characters.
 When this document refers to legacy code pages, it means the font includes the characters corresponding to that code page's repertoire. It does not mean the font implements the legacy byte encoding.
 When handling inputs in legacy code pages, you should first convert them to UTF-8, for example by using the `iconv` utility, such as `cat 'MS-DOS CP437 doc.txt' | iconv -f CP437 -t UTF-8 | figlet -f phm-shinonome -C utf8` for an MS-DOS code page 437 (IBM PC) input, or `cat 'DOS/V CP932 doc.txt' | iconv -f CP932 -t UTF-8 | figlet -f phm-shinonome -C utf8` for a DOS/V code page 932 (Shift-JIS) input.
