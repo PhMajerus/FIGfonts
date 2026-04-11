@@ -307,7 +307,7 @@ Unlike many large font collections, the expanded repertoire of phm-shinonome is 
 It uses three rows of characters built from 6×12 pseudo‑pixels for half‑width and 12×12 pseudo‑pixels for full‑width, rendered as 3×3 and 6×3 octant matrices.
 
 Because a FIGfont is never a primary text font but a title‑sized companion to the user’s terminal or editor font, phm‑shinonome is designed for full parity with modern terminal and editor coverage.
-Any text that renders correctly in the terminal should also render correctly when piped through figlet using this font, without missing glyphs.
+Any text that renders correctly in the terminal should also render correctly when piped through figlet using this font, without missing glyphs placeholders (tofu).
 This guarantees that scripts and utilities outputs can be safely "upscaled" into large ASCII‑art titles.
 
 **Japanese compatibility**
