@@ -302,7 +302,7 @@ _Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
 
 phm‑shinonome uses Unicode 16.0 octant characters to display the monospace Shinonome12 / 東雲12 (Shinonome 12‑dot Gothic/sans‑serif) bitmap font, originally designed by Yasuyuki Furukawa / 古川 泰之様 and released into the public domain, and widely used on early Japanese Unix X11 environments (FreeBSD, Linux).
 This FIGfont preserves its look while expanding it into a fully modern, compatibility-complete design.
-Unlike many large font collections, the expanded repertoire of phm-shinonome is not aggregated or converted from other fonts - it includes 7126 glyphs from the original Shinonome bitmap font, and every additional glyph is my own design in the Shinonome style.
+Unlike many large font collections, the expanded repertoire of phm-shinonome is not aggregated or converted from other fonts - it includes 7126 glyphs converted from the original Shinonome bitmap font, and every additional glyph is my own design in the Shinonome style.
 
 It uses three rows of characters built from 6×12 pseudo‑pixels for half‑width and 12×12 pseudo‑pixels for full‑width, rendered as 3×3 and 6×3 octant matrices.
 
