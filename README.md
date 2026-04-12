@@ -327,10 +327,10 @@ This guarantees that scripts and utilities outputs can be safely "upscaled" into
 - Cascadia 2407.24 parity, ensuring compatibility with Windows Terminal and Visual Studio (Windows 10 → 11)
 
 **Modern additions**
-- Braille, block mosaic patterns, block diagonals, large type pieces, and some other Symbols for Legacy Computing
 - More Latin letters (Full Latin-1 Supplement, Latin Extended-A, Latin Extended-B, IPA Extensions, Phonetic Extensions, Latin Extended Additional, and Latin Extended-C blocks)
+- Additional symbols and pictographs (Full Control Pictures, Enclosed Alphanumerics, Miscellaneous Symbols, Dingbats, Enclosed Alphanumeric Supplement)
+- Braille, block mosaic patterns, large type pieces, sextants, octants, block diagonals, …
 - A growing set of emojis (1161 so far)
-- Additional symbols and pictographs
 
 With 13318 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
 
