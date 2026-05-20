@@ -18,6 +18,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[hp2640-largetype](#hp2640-largetype)| 3 | 103 |ASCII| | |
 |[phm-largetype](#phm-largetype)| 3 | 2570 |ISO 8859-1 + CP1252|Japanese Katakana|CP437 + more|
 |[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |ASCII| | |
+|[phm-leds](#phm-leds)| 2 | 95 |ASCII| | |
 |[phm-minecraft](#phm-minecraft)| 2 | 220 |ISO 8859-1 + CP1252| | |
 |[phm-c64](#phm-c64)| 2 | 184 |ASCII| |PETSCII|
 |[phm-cga](#phm-cga)| 2 | 264 |ASCII| |CP437|
@@ -148,6 +149,15 @@ This font uses Unicode 16.0 octant characters to create a monospaced retro low-r
 The characters are 6×8 pseudo-pixels, inspired by the Motorola MC6847 character generator, Tatung Einstein TC-01, TRS-80, and other computers of the 1980's.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
+
+
+## phm-leds
+![phm-leds](images/phm-leds.png)
+
+This font uses Unicode 16.0 separated sextant characters to render characters that look like LED marquee or low resolution LCD matrix displays. It only supports ASCII.
+The characters are using 2 rows and 1 to 4 columns.
+
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the separated sextant characters.
 
 
 ## phm-minecraft
