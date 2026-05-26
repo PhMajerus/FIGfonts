@@ -28,7 +28,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-dos-square](#phm-dos-square) | 2 | 659 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic) + CP862 (Hebrew)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
-|[phm-shinonome](#phm-shinonome)| 3 | 14307 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437 + Emojis + more|
+|[phm-shinonome](#phm-shinonome)| 3 | 14340 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437 + Emojis + more|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |ASCII| | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |ASCII| | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |ISO 8859-1 + CP1252| | |
@@ -115,7 +115,7 @@ This FIGfont requires the terminal to support Large Type Pieces characters to di
 ## phm-largetype
 ![phm-largetype](images/phm-largetype.png)
 
-This is my main Large Type Pieces (Unicode 16.0) font, containing 2570 characters covering ASCII, Latin-1, Latin Extended-A, Latin Extended-B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana (JIS X 0201), Braille, some mathematical operators and symbols, and more.
+This is my main Large Type Pieces (Unicode 16.0) font, containing 2570 characters covering ASCII, Latin-1, Latin Extended-A/B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana (JIS X 0201), Braille, some mathematical operators and symbols, and more.
 
 It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
 It also uses Sextants and Octants for some non-alphabetical characters such as outlined letters and 7-segment digits.
@@ -337,12 +337,12 @@ This guarantees that scripts and utilities outputs can be safely "upscaled" into
 - Cascadia 2407.24 parity, ensuring compatibility with Windows Terminal and Visual Studio (Windows 10 → 11)
 
 **Modern additions**
-- More Latin letters (Full Latin-1 Supplement, Latin Extended-A, Latin Extended-B, IPA Extensions, Phonetic Extensions, Latin Extended Additional, and Latin Extended-C blocks)
+- More Latin letters (Latin-1 Supplement, Latin Extended-A/B/C, IPA Extensions, Phonetic Extensions, Latin Extended Additional blocks)
 - Additional symbols and pictographs (Control Pictures, Enclosed Alphanumerics, Miscellaneous Symbols, Dingbats, Enclosed Alphanumeric Supplement, Supplemental Arrows-A/B/C)
 - Braille, block mosaic patterns, large type pieces, sextants, octants, block diagonals, …
 - Emojis (1504 emojis, all Unicode 17.0 Emojis AFAIK)
 
-With 14307 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
+With 14340 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
