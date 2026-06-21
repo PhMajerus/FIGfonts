@@ -16,7 +16,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |:-----|---:|---:|:-----:|:-----:|:-----:|
 |[phm-smallvt](#phm-smallvt)| 4 | 583 |ASCII + some extra Latin|Some Greek| |
 |[hp2640-largetype](#hp2640-largetype)| 3 | 103 |ASCII| | |
-|[phm-largetype](#phm-largetype)| 3 | 2570 |ISO 8859-1 + CP1252|Japanese Katakana|CP437 + more|
+|[phm-largetype](#phm-largetype)| 3 | 2585 |ISO 8859-1 + CP1252|Japanese Katakana|CP437 + more|
 |[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |ASCII| | |
 |[phm-leds](#phm-leds)| 2 | 95 |ASCII| | |
 |[phm-minecraft](#phm-minecraft)| 2 | 220 |ISO 8859-1 + CP1252| | |
@@ -115,7 +115,7 @@ This FIGfont requires the terminal to support Large Type Pieces characters to di
 ## phm-largetype
 ![phm-largetype](images/phm-largetype.png)
 
-This is my main Large Type Pieces (Unicode 16.0) font, containing 2570 characters covering ASCII, Latin-1, Latin Extended-A/B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana (JIS X 0201), Braille, some mathematical operators and symbols, and more.
+This is my main Large Type Pieces (Unicode 16.0) font, containing 2585 characters covering ASCII, Latin-1, Latin Extended-A/B, Latin Extended Additional, superscripts, subscripts, small capitals, number forms, Greek, Cyrillic, Japanese half-width Katakana (JIS X 0201), Braille, some mathematical operators and symbols, and more.
 
 It uses Unicode 16 Large Type Pieces (`U+1CE1A` to `U+1CE50`) and Quadrants (including the centered variants) to build a smooth set of characters using three rows.
 It also uses Sextants and Octants for some non-alphabetical characters such as outlined letters and 7-segment digits.
