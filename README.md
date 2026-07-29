@@ -34,7 +34,7 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-slanted](#phm-slanted)| 6 | 255 |ISO 8859-1 + CP1252| | |
 |[phm-chisel](#phm-chisel)| 6 | 637 |ISO 8859-1 + CP1252|Japanese Katakana|✔︎|
 |[beyond-blue](#beyond-blue)| 9 | 102 |ASCII| | |
-|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3953 |ISO 8859-1 + CP1252|Japanese Katakana + a few Kanji|CP437 + Some emojis|
+|[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 3955 |ISO 8859-1 + CP1252|Japanese Katakana + a few Kanji|CP437 + Some emojis|
 
 All these fonts are using Unicode codepoints. Code pages are mentioned as sets of characters, not the text encoding.
 
@@ -342,7 +342,7 @@ This guarantees that scripts and utilities outputs can be safely "upscaled" into
 - Braille, block mosaic patterns, large type pieces, sextants, octants, block diagonals, …
 - Emojis (1504 emojis, all Unicode 17.0 Emojis AFAIK)
 
-With 14722 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design.
+With 14722 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design, with far broader Unicode coverage than any prior FIGlet font.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
@@ -444,7 +444,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 ## PHM Beyond Neo (FIGfont family)
 
 This font takes visual cues from ST+Roy/SAC Beyond, but besides the aesthetic inspiration, is a completely original work built from my own set of thousands of colorful ANSI‑art glyphs.
-It uses just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3953 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 character sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 152 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 428 color symbols and emojis (all smiley faces and hands, and some pictographs and emojis), and more.
+It uses just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 3955 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 character sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 152 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 430 color symbols and emojis (all smiley faces and hands, and some pictographs and emojis), and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 ### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange; -pink; -silver; -gold
