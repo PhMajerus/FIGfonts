@@ -444,7 +444,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 ## PHM Beyond Neo (FIGfont family)
 
 This font takes visual cues from ST+Roy/SAC Beyond, but besides the aesthetic inspiration, is a completely original work built from my own set of thousands of colorful ANSI‑art glyphs.
-It uses just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 4018 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 character sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 152 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 493 color symbols and emojis (all smiley faces and hands, and some pictographs and emojis), and more.
+It uses just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 4018 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 character sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 152 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 493 color symbols and emojis (all smiley faces, hands, and hearts, as well as some pictographs and emojis), and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
 ### phm-beyondneo-red; -green; -blue; -yellow; -purple; -cyan; -orange; -pink; -silver; -gold
