@@ -443,7 +443,7 @@ _Remember to use `figlet -f beyond-blue -w 9999` to avoid misplaced line breaks 
 
 ## PHM Beyond Neo (FIGfont family)
 
-This font takes visual cues from ST+Roy/SAC Beyond, but besides the aesthetic inspiration, is a completely original work built from my own set of thousands of colorful ANSI‑art glyphs.
+This font takes visual cues from ST+Roy/SAC Beyond and 8-bit and 16-bit demoscene characters, but besides the aesthetic inspiration, is a completely original work built from my own set of thousands of colorful ANSI‑art glyphs.
 It uses just 5 rows by taking advantage of Unicode 16.0 Symbols for Legacy Computing. It contains 4085 characters, and supports the ASCII, ISO 8859-1 and Windows 1252 Latin-1 character sets, Greek, Cyrillic, Japanese Katakana (and Hiragana as Katakana), 153 ideographs (mostly for dates, times, places, and numbers in Chinese numerals), 507 color symbols and emojis (all smiley faces, hands, and hearts, as well as some pictographs and emojis), and more.
 Several versions are available with different color schemes or compatible with plain-text.
 
@@ -494,6 +494,7 @@ echo 'Hello, world!' | figlet -f phm-largetype -C utf8
 
 ### Mitigating FIGlet width calculation
 Note many of my fonts use ANSI/VT control sequences. FIGlet treats those escape sequences as printable characters, so it counts them toward the line width and produces incorrect wrapping.
+This completely breaks the rendering of colored fonts, and can even lead the figlet utility to crash with a `Segmentation fault (core dumped)` error.
 The workaround is to use the `-w 9999` option to disable FIGlet's wrapping logic entirely and avoid line breaks based on those incorrect widths.
 To create text that spans several lines, the `fold` utility can be used to prepare the text in advance.
 For example:
