@@ -36,9 +36,9 @@ Most FIGlet fonts only support the base set of 95 printable ASCII characters wit
 |[beyond-blue](#beyond-blue)| 9 | 102 |ASCII| | |
 |[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 4085 |ISO 8859-1 + CP1252|Japanese Katakana + a few Kanji|CP437 + Some emojis|
 
+<details><summary>
 All these fonts are using Unicode codepoints. Code pages are mentioned as sets of characters, not the text encoding.
 
-<details><summary>
 _(Expand for more details on code pages and encodings.)_
 </summary>
 
@@ -411,7 +411,7 @@ The following set of replacements will change the 3 original grays to red (`31` 
 ```bash
 hostname | figlet -f phm-chisel -C utf8 -w 9999 -n | sed -e 's/97/31/g;s/107/41/g;s/37/32/g;s/47/42/g;s/90/33/g;s/100/43/g'
 ```
-<p><details><summary>
+<details><summary>
 It is also possible to use 256-colors or 24-bit colors for finer control.
 Here are replacements commands for common colors gradients using the 256-colors palette:
 
@@ -430,7 +430,7 @@ _(Expand for commands to use for red, green, blue, yellow, purple, cyan, orange,
 | Pink | `sed -e 's/97/38;5;218/g;s/107/48;5;218/g;s/37/38;5;211/g;s/47/48;5;211/g;s/90/38;5;168/g;s/100/48;5;168/g'` |
 | Silver | `sed -e 's/97/38;5;231/g;s/107/48;5;231/g;s/37/38;5;188/g;s/47/48;5;188/g;s/90/38;5;145/g;s/100/48;5;145/g'` |
 
-</details></p>
+</details>
 
 _Remember to use `figlet -f phm-chisel -C utf8 -w 9999` to access Unicode characters and to avoid misplaced line breaks and broken VT control sequences due to bad width computation._
 
