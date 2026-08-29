@@ -6,8 +6,8 @@
 ## Introduction
 
 This repository contains the fonts I created for the [FIGlet utility](http://www.figlet.org/).
-While most FIGfonts are ASCII-art, I decided to experiment with ANSI/VT coloring and extended Unicode characters as sub-characters to create denser characters. This makes them more suitable for use as titles and general text than the traditionally very large FIGfonts.
-Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes also JIS X 0208 (Japanese), emojis,… some contain thousands of characters.
+While most FIGfonts are traditional ASCII-art, I decided to experiment with ANSI/VT coloring and with using extended Unicode characters as sub-characters to create denser large characters. The result is a set of fonts that work better for titles and general text, rather than the very large, banner-style FIGfonts.
+Most FIGlet fonts only support the base set of 95 printable ASCII characters with rare exceptions such as the updated `standard.flf` for FIGlet 2.2, which includes 331 characters. Many of my fonts support much larger character sets: Multilingual Latin, JIS X 0208 (Japanese), KS X 1001 (Korean), emojis, and other Unicode blocks. Several of them containing thousands of characters, providing full parity with modern terminal fonts.
 
 
 ## Fonts in this repository
@@ -37,6 +37,10 @@ Also, many of them extend way beyond ASCII, supporting Latin-1, but sometimes al
 |[phm-beyondneo-*](#phm-beyond-neo-figfont-family)| 5 | 4085 |ISO 8859-1 + CP1252|Japanese Katakana + a few Kanji|CP437 + Some emojis|
 
 All these fonts are using Unicode codepoints. Code pages are mentioned as sets of characters, not the text encoding.
+
+<details><summary>
+_(Expand for more details on code pages and encodings.)_
+</summary>
 
 ### Latin encodings
 Latin languages support can include
@@ -85,6 +89,11 @@ Because of this, Korean support in FIGfonts can be described as:
 - KS X 1001 Hangul (2350 modern syllables)
 - Full Hangul (all 11172 syllables)
 - Hanja subset
+
+</details>
+
+
+---
 
 
 ## phm-smallvt
@@ -470,6 +479,9 @@ _Remember to use `figlet -f phm-beyondneo-red -C utf8 -w 9999` to access Unicode
 This is the monochrome version of Beyond Neo. It is designed without any ANSI/VT escape sequence, making it compatible with plain-text and VT-unaware utilities.
 
 _Remember to use `figlet -f phm-beyondneo-mono -C utf8` to access Unicode characters (including ISO 8859-1)._
+
+
+---
 
 
 ## Installing and using FIGfonts
