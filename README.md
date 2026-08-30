@@ -482,10 +482,8 @@ The `-C utf8` option makes FIGlet decode UTF-8 input into Unicode code points an
 
 But to make it cleaner and easier to use regularly, the font files can be copied to the FIGfont folder:
 ```bash
-# Find out which directory contains figfonts
-figlet -I2
-# Copy font file(s) to that directory
-sudo cp phm-largetype.flf /usr/share/figlet/phm-largetype.flf
+# Copy font file(s) to the figlet fonts directory
+sudo cp *.flf $(figlet -I2)
 # Use the FIGfont without having to specify the path or extension
 echo 'Hello, world!' | figlet -f phm-largetype -C utf8
 ```
