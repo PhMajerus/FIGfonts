@@ -20,6 +20,7 @@ Most FIGlet fonts only support the base set of 95 printable ASCII characters wit
 |[phm-lcdmatrix](#phm-lcdmatrix)| 2 | 104 |ASCII| | |
 |[phm-leds](#phm-leds)| 2 | 95 |ASCII| | |
 |[phm-minecraft](#phm-minecraft)| 2 | 220 |ISO 8859-1 + CP1252| | |
+|[phm-thomson](#phm-thomson)| 2 | 126 |ASCII + some extra Latin| | |
 |[phm-c64](#phm-c64)| 2 | 184 |ASCII| |PETSCII|
 |[phm-cga](#phm-cga)| 2 | 264 |ASCII| |CP437|
 |[phm-vga](#phm-vga)| 4 | 264 |ASCII| |CP437|
@@ -164,6 +165,17 @@ It uses two rows and supports the Latin-1 characters (ISO 8859-1 and Windows cod
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
 _Remember to use `figlet -f phm-minecraft -C utf8` to access Unicode characters._
+
+
+## phm-thomson
+![phm-thomson](images/phm-thomson.png)
+
+This font uses Unicode 16.0 octant characters to recreate the original character set of Thomson 8-bit computers (MO5, MO5E, MO5NR, MO6, T9000, TO7, TO7/70, TO8, TO8D, TO9, TO9+, and Olivetti Prodest PC128) as a large font.
+The characters are 8×8 pseudo-pixels, rendered as 4×2 octant characters. It uses two rows and only includes characters originally found in the Thomson characters ROM of several localized versions. This means a few ASCII characters are missing, as the Thomson character set was based on an early version of ASCII.
+
+It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
+
+_Remember to use `figlet -f phm-thomson -C utf8` to access Unicode characters._
 
 
 ## phm-c64
