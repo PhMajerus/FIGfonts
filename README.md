@@ -29,7 +29,7 @@ Most FIGlet fonts only support the base set of 95 printable ASCII characters wit
 |[phm-dos-square](#phm-dos-square) | 2 | 659 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic) + CP862 (Hebrew)|CP437|
 |[phm-hdos](#phm-hdos) | 4 | 2660 |ASCII|Korean KS X 1001 Hangul|CP437|
 |[phm-dosv](#phm-dosv)| 4 | 7531 |ASCII|Japanese CP932| |
-|[phm-shinonome](#phm-shinonome)| 3 | 15523 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437 + Emojis + more|
+|[phm-shinonome](#phm-shinonome)| 3 | 15555 |ISO 8859-1 + All latin-based MS-DOS and Windows codepages|Japanese CP932 + Jōyō + Jinmeiyō + CP737 + CP869 + CP1253 (Greek) + CP855 + CP866 + CP1251 (Cyrillic)|CP437 + Emojis + more|
 |[phm-blocky](#phm-blocky) ([-reverse](#phm-blocky-reverse))| 2 (4) | 102 |ASCII| | |
 |[phm-rounded](#phm-rounded)| 4 | 103 |ASCII| | |
 |[phm-slanted](#phm-slanted)| 6 | 255 |ISO 8859-1 + CP1252| | |
@@ -319,7 +319,7 @@ _Remember to use `figlet -f phm-dosv -C utf8` to access Unicode characters._
 
 phm‑shinonome uses Unicode 16.0 octant characters to display the monospace Shinonome12 / 東雲12 (Shinonome 12‑dot Gothic/sans‑serif) bitmap font, originally designed by Yasuyuki Furukawa / 古川 泰之様 and released into the public domain, and widely used on early Japanese Unix X11 environments (FreeBSD, Linux).
 This FIGfont preserves its look while expanding it into a fully modern, compatibility-complete design.
-Unlike many large font collections, the expanded repertoire of phm-shinonome is not aggregated or converted from other fonts - it includes 7126 glyphs converted from the original Shinonome bitmap font (+24 duplicates), and every additional glyph is my own design in the Shinonome style, more than doubling the number of characters from the original version.
+Unlike many large font collections, the expanded repertoire of phm-shinonome is not aggregated or converted from other fonts - it includes 7126 glyphs converted from the original Shinonome bitmap font (+54 duplicates), and every additional glyph is my own design in the Shinonome style, more than doubling the number of characters from the original version.
 
 It uses three rows of characters built from 6×12 pseudo‑pixels for half‑width and 12×12 pseudo‑pixels for full‑width, rendered as 3×3 and 6×3 octant matrices.
 
@@ -335,6 +335,7 @@ This guarantees that scripts and utilities outputs can be safely "upscaled" into
 - Jōyō kanji / 常用漢字 2010 (4 additional ideographs to support all 2136)
 - Full CP932 parity (MS-DOS/Windows Japanese Shift‑JIS)
 - MS Gothic / ＭＳ ゴシック 5.32 parity (except for non-Japanese ideographs), ensuring compatibility with Japanese Windows console (Windows 2000 → 11)
+- CJK Compatibility Ideographs (32 additional duplicates for codepoint compatibility on top of the specific ones required above, and more being added)
 
 **Western and legacy compatibility**
 - MS‑DOS CP437 (IBM PC / en‑US) and CP850 (Latin 1)
@@ -349,7 +350,7 @@ This guarantees that scripts and utilities outputs can be safely "upscaled" into
 - Braille, block mosaic patterns, large type pieces, sextants, octants, block diagonals, …
 - Emojis (1513 emojis, all Unicode 17.0 Emojis and current draft of upcoming Unicode 18.0)
 
-With 15523 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design, with far broader Unicode coverage than any prior FIGlet font.
+With 15555 characters, phm‑shinonome is probably the largest FIGlet font ever created, unifying Japanese, Western, and semigraphic bitmap lineages into a single Unicode‑coherent design, with far broader Unicode coverage than any prior FIGlet font.
 
 It does not require an ANSI/VT terminal (does not use escape sequences) and works fine with FIGlet, but the terminal must support the octant characters.
 
